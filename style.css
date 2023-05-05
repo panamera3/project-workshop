@@ -119,17 +119,19 @@ ul {
   padding-top: 50px;
 }
 
-.full-equipment{
+.full-equipment {
   display: flex;
 }
 
-.equipment{
+.equipment {
   display: flex;
   flex-direction: column;
+  width: 48.125%;
 }
 
-.equipment-description{
+.equipment-description {
   display: flex;
+  flex: 50px;
 }
 
 .customers-logos {
