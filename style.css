@@ -50,9 +50,30 @@ ul {
   background: linear-gradient(#383838, #727171);
 }
 
+#more-details {
+  border-radius: 50px;
+  background-color: #47a4b5;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 23px;
+}
+
 .features {
   display: flex;
   background: linear-gradient(#727171, #c3c3c3);
+}
+
+.features > p {
+  display: inline;
+  background: radial-gradient(
+    circle at center,
+    rgb(71, 164, 181, 0.5) 0%,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  width: 22.5%;
+  height: 50%;
+  padding: 100px 50px;
 }
 
 .feature {
@@ -60,6 +81,10 @@ ul {
   border-bottom: 1px solid #181818;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.feature > img {
+  width: 8.125%;
 }
 
 .feature-name {
@@ -72,6 +97,39 @@ ul {
 
 .about-technology {
   background: linear-gradient(#c3c3c3, #ffffff);
+}
+
+.about-technology-content {
+  display: flex;
+}
+
+.examples-of-work {
+  display: flex;
+}
+
+.example-of-work {
+  display: flex;
+  flex-direction: column;
+}
+
+.example-of-work-numbers {
+  display: flex;
+  border-top: 2px solid #47a4b5;
+  width: 35.625%;
+  padding-top: 50px;
+}
+
+.full-equipment{
+  display: flex;
+}
+
+.equipment{
+  display: flex;
+  flex-direction: column;
+}
+
+.equipment-description{
+  display: flex;
 }
 
 .customers-logos {
@@ -95,11 +153,11 @@ footer {
   display: flex;
 }
 
-.application{
-  margin-right: 60px; 
+.application {
+  margin-right: 60px;
 }
-.application{
-  margin-bottom: 20px; 
+.application {
+  margin-bottom: 20px;
 }
 
 .application p {

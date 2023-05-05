@@ -12,13 +12,10 @@
 </head>
 
 <body>
-    <header>
-    </header>
-
     <main>
         <article class="main-article title">
             <div class="navigation">
-                <img class="header logo" src="images/header/logo.jpeg" width="10%" />
+                <img class="header logo" src="images/header/logo.jpeg" width="10%" height="100%" />
                 <nav>
                     <ul>
                         <li class="description">
@@ -28,7 +25,7 @@
                             <a href="#about-technology">Технология</a>
                         </li>
                         <li class="description">
-                            <a href="#equipment">Оборудование</a>
+                            <a href="#equipments">Оборудование</a>
                         </li>
                         <li class="description">
                             <a href="#advantages">Преимущества</a>
@@ -37,12 +34,12 @@
                     <a href="#application">Оставить заявку</a>
                 </nav>
             </div>
-            <div class="">
+            <div class="info">
                 <h1>Плазма Динамика</h1>
                 <p class="description">Наша миссия - делать ваше производство качественнее и экономнее</p>
-                <a href="">Подробнее</a>
+                <a href="#features" id="more-details">Подробнее</a>
                 <img src="images/header/title.png">
-                <img src="images/header/main-photo.jpg"/>
+                <img src="images/header/main-photo.jpg" />
             </div>
         </article>
         <article class="main-article features" id="features">
@@ -103,21 +100,27 @@
         </article>
         <article class="main-article about-technology" id="about-technology">
             <h2>О технологии</h2>
-            <p>Газопламенное напыление представляет собой нагрев, плавление, диспергирование расплава и перенос
-                расплавленных частиц ацетилено-кислотного пламени материала на металлическую поверхность детали, где
-                формирует стабильное непрерывное покрытие</p>
-            <img src="images/about-technology/technology.svg" />
+            <div class="about-technology-content">
+                <p>Газопламенное напыление представляет собой нагрев, плавление, диспергирование расплава и перенос
+                    расплавленных частиц ацетилено-кислотного пламени материала на металлическую поверхность детали, где
+                    формирует стабильное непрерывное покрытие</p>
+                <img src="images/about-technology/technology.svg" />
+            </div>
         </article>
         <article class="main-article examples-of-work">
-            <p>Одним из примеров нашей работы является усовершенствование фурмы - приспособления для вдувания газа в
-                металлургическую печь или ковш</p>
-            <div>
-                <p>6</p>
-                <p class="description">Во столько раз увеличен срок службы</p>
-            </div>
-            <div>
-                <p>200</p>
-                <p class="description">Миллионов рублей экономии в год</p>
+            <div class="example-of-work">
+                <p>Одним из примеров нашей работы является усовершенствование фурмы - приспособления для вдувания газа в
+                    металлургическую печь или ковш</p>
+                <div class="example-of-work-numbers">
+                    <div>
+                        <p>6</p>
+                        <p class="description">Во столько раз увеличен срок службы</p>
+                    </div>
+                    <div>
+                        <p>200</p>
+                        <p class="description">Миллионов рублей экономии в год</p>
+                    </div>
+                </div>
             </div>
             <img src="images/examples-of-work/tuyere.png" />
         </article>
@@ -140,28 +143,35 @@
                 <p>Стоимость материала</p>
             </div>
         </article>
-        <article class="main-article equipment" id="equipment">
+        <article class="main-article equipments" id="equipments">
             <h2>Оборудование</h2>
-            <div>
+            <div class="full-equipment">
                 <img src="images/equipment/sg-100.png" />
-                <h3>Плазматрон SG-100</h3>
-                <div>
-                    <p>Описание</p>
-                    <p>Представляет собой многоцелевой плазменный распылитель большой мощности, подходит как для больших
-                        объемов производств, так и для малых.
-                        Уникальная конструкция SG-100 допускает возможность как внутреннюю, так и внешнюю подачу
-                        порошка.
-                        Внутренняя подача обеспечивает максимальное увлечение частиц в точке наивысшей энергии внутри
-                        плазменного потока... <a>читать далее</a></p>
-                    <p>Характеристики</p>
-                    <pre>Мощность – 80 кВт
+                <div class="equipment">
+                    <h3>Плазматрон SG-100</h3>
+                    <div class="equipment-description">
+                        <div>
+                            <p>Описание</p>
+                            <p>Представляет собой многоцелевой плазменный распылитель большой мощности, подходит как для
+                                больших
+                                объемов производств, так и для малых.
+                                Уникальная конструкция SG-100 допускает возможность как внутреннюю, так и внешнюю подачу
+                                порошка.
+                                Внутренняя подача обеспечивает максимальное увлечение частиц в точке наивысшей энергии
+                                внутри
+                                плазменного потока... <a>читать далее</a></p>
+                        </div>
+                        <div>
+                            <p>Характеристики</p>
+                            <pre>Мощность – 80 кВт
 Производительность напыления – до 5 кг/чРабочее напряжение – до 80 Вт
 Фракционный состав порошков – 40-100 мкм
 Рабочий ток дуги – 800 АПорошки – аметаллические, композитные, керамические, конгломерированные
 Ассортимент аппаратных конфигураций портов
 Продольные аноды и катоды
 90-градусный адаптер</pre>
-                    <p>Отзывы</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </article>
