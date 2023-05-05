@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  color: black;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.description {
+  color: #383838;
+}
+
+.description > p {
+  color: #383838;
+}
+
+.description > a {
+  color: #383838;
+}
+
+/*MAIN*/
+.navigation {
+  display: flex;
+  margin-bottom: 95px;
+}
+
+.navigation ul {
+  display: flex;
+}
+
+.navigation ul a {
+  text-decoration: none;
+  color: black;
+  margin: 0 25px;
+}
+
+.navigation nav > a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 25px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding: 10px 68px;
+}
+
+.title {
+  background: linear-gradient(#383838, #727171);
+}
+
+.features {
+  display: flex;
+  background: linear-gradient(#727171, #c3c3c3);
+}
+
+.feature {
+  display: flex;
+  border-bottom: 1px solid #181818;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.feature-name {
+  display: flex;
+}
+
+.feature:first-of-type {
+  border-top: 1px solid #181818;
+}
+
+.about-technology {
+  background: linear-gradient(#c3c3c3, #ffffff);
+}
+
+.customers-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer-logo {
+  width: 300px;
+  margin: 0px 64px;
+}
+
+#customer-logo-center {
+  border: 1px 0px solid #909090;
+  margin: 0px 18px;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+}
+
+.application{
+  margin-right: 60px; 
+}
+.application{
+  margin-bottom: 20px; 
+}
+
+.application p {
+  color: #909090;
+  border-bottom: 1px solid #909090;
+  width: 26.25vw;
+  padding-bottom: 13px;
+  font-size: 11px;
+  margin-top: 34px;
+}
+
+.application a {
+  color: #ffffff;
+  background-color: #383838;
+  padding: 19px 115px;
+  border-radius: 50px;
+}
+
+.contacts {
+  font-size: 18px;
+}
