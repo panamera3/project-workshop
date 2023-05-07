@@ -131,30 +131,31 @@
         </article>
         <article class="main-article pricing">
             <div id="example">
-
                 <h2>Формирование цены</h2>
             </div>
-            <div>
-                <p>01</p>
-                <p>Площадь детали</p>
-            </div>
-            <div>
-                <p>02</p>
-                <p>Сложность геометрии</p>
-            </div>
-            <div>
-                <p>03</p>
-                <p>Толщина покрытия</p>
-            </div>
-            <div>
-                <p>04</p>
-                <p>Стоимость материала</p>
+            <div class="price-elements">
+                <div class="price-element" id="first">
+                    <p>01</p>
+                    <p>Площадь детали</p>
+                </div>
+                <div class="price-element" id="second">
+                    <p>02</p>
+                    <p>Сложность геометрии</p>
+                </div>
+                <div class="price-element" id="third">
+                    <p>03</p>
+                    <p>Толщина покрытия</p>
+                </div>
+                <div class="price-element" id="fourth">
+                    <p>04</p>
+                    <p>Стоимость материала</p>
+                </div>
             </div>
         </article>
         <article class="main-article equipments" id="equipments">
             <h2>Оборудование</h2>
             <div class="full-equipment">
-                <img src="images/equipment/sg-100.png" width="50%" height="50%" />
+                <img src="images/equipment/sg-100.png" width="50em" height="50em" />
                 <div class="equipment">
                     <h3>Плазматрон SG-100</h3>
                     <div class="equipment-description">
@@ -171,7 +172,8 @@
                         </div>
                         <div>
                             <p>Характеристики</p>
-                            <pre>Мощность – 80 кВт
+                            <!--ПЕРЕНЕСТИ В СТИЛИ  -->
+                            <pre style="white-space: pre-wrap;">Мощность – 80 кВт
 Производительность напыления – до 5 кг/ч
 Рабочее напряжение – до 80 Вт
 Фракционный состав порошков – 40-100 мкм
@@ -198,21 +200,24 @@
                 <img src="images/customers/" class="customer-logo" />
             </div>
         </article>
+        <article class="main-article communication">
+            <div class="application" id="application">
+                <h2>Оставьте заявку для связи с вами</h2>
+                <p>ИМЯ</p>
+                <p>ТЕЛЕФОН</p>
+                <p>E-MAIL</p>
+                <a href="">Отправить</a>
+            </div>
+            <div class="contacts description">
+                <p>г. Екатеринбург</p>
+                <p>plasmadynamics@yandex.ru</p>
+                <p>+7 992 014 38 77</p>
+            </div>
+        </article>
     </main>
 
     <footer>
-        <div class="application" id="application">
-            <h2>Оставьте заявку для связи с вами</h2>
-            <p>ИМЯ</p>
-            <p>ТЕЛЕФОН</p>
-            <p>E-MAIL</p>
-            <a href="">Отправить</a>
-        </div>
-        <div class="contacts description">
-            <p>г. Екатеринбург</p>
-            <p>plasmadynamics@yandex.ru</p>
-            <p>+7 992 014 38 77</p>
-        </div>
+        <p>Товарный знак © 2023 Plasma Dynamics – Авторское право сохранено.</p>
     </footer>
 
     <script>

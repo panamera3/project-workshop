@@ -5,13 +5,17 @@
   font-family: "Inter", sans-serif;
 }
 
-#example{
+body{
+  background: linear-gradient(#383838, #ffffff 65%);
+  padding: 0 8%;
+}
+
+#example {
   padding: 30px;
   background: url("images/pricing/blue-border-text.svg") no-repeat;
   background-size: 100% 100%;
   background-position-x: 10%;
 }
-
 ul {
   list-style: none;
 }
@@ -29,9 +33,15 @@ ul {
 }
 
 /*MAIN*/
+
+.main-article h2{
+  font-size: 40px;
+}
+
 .navigation {
   display: flex;
   margin-bottom: 95px;
+  flex: 1;
 }
 
 .navigation ul {
@@ -54,10 +64,10 @@ ul {
 }
 
 .title {
-  background: linear-gradient(#383838, #727171);
+  /*background: linear-gradient(#383838, #727171);*/
 }
 
-.info{
+.info {
   display: flex;
 }
 
@@ -72,7 +82,7 @@ ul {
 .features {
   display: flex;
   align-items: center;
-  background: linear-gradient(#727171, #c3c3c3);
+  /*background: linear-gradient(#727171, #c3c3c3);*/
   padding-top: 10%;
   padding-bottom: 5%;
 }
@@ -118,7 +128,7 @@ ul {
 }
 
 .about-technology {
-  background: linear-gradient(#c3c3c3, #ffffff);
+  /*background: linear-gradient(#c3c3c3, #ffffff);*/
 }
 
 .about-technology-content {
@@ -147,6 +157,49 @@ ul {
 
 .full-equipment {
   display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.price-elements {
+  display: grid;
+}
+
+.price-element {
+  border-radius: 50%;
+  background-color: #47a4b5;
+  width: 13em;
+  height: 13em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px #47a4b5;
+}
+
+.price-element p {
+  color: #ffffff;
+}
+
+#first {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#second {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#third {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#fourth {
+  grid-column: 4;
+  grid-row: 2;
 }
 
 .equipment {
@@ -157,7 +210,7 @@ ul {
 
 .equipment-description {
   display: flex;
-  flex: 50px;
+  flex: 1;
 }
 
 .customers-logos {
@@ -176,9 +229,9 @@ ul {
   margin: 0px 18px;
 }
 
-/*FOOTER*/
-footer {
+.communication {
   display: flex;
+  
 }
 
 .application {
@@ -207,3 +260,6 @@ footer {
 .contacts {
   font-size: 18px;
 }
+
+/*FOOTER*/
+
