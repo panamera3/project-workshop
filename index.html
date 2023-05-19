@@ -31,19 +31,28 @@
                             <a href="#advantages">Преимущества</a>
                         </li>
                     </ul>
-                    <a href="#application">Оставить заявку</a>
                 </nav>
+                <div class="application-button">
+                    <a href="#application">Оставить заявку</a>
+                </div>
             </div>
             <div class="info">
-                <div>
-                    <h1>Плазма Динамика</h1>
-                    <p class="description">Наша миссия - делать ваше производство качественнее и экономнее</p>
+                <div class="main-info">
+                    <h1>Thermal Spray</h1>
+                    <p class="description mission">Наша миссия - делать ваше производство качественнее и экономнее</p>
                     <a href="#features" id="more-details">Подробнее</a>
                 </div>
-                <div>
-                    <img src="images/header/main-photo.jpg" />
-                    <img src="images/header/white-decor1.svg">
-                    <img src="images/header/white-decor2.svg">
+                <div style="background: radial-gradient(
+                    circle at center,
+                    rgb(71, 164, 181, 0.3) 0%,
+                    rgba(0, 0, 0, 0) 70%,
+                    rgba(0, 0, 0, 0) 100%
+                  );">
+                    <img src="images/header/main-photo.png" width="50%" style="margin-left: auto;
+                        display: block; margin-right: auto; " />
+                    <!--ПЕРЕНЕСТИ В СТИЛИ  -->
+                    <img src="images/header/white-decor1.svg" style="position: absolute; top: 40%; left: 45%;">
+                    <img src="images/header/white-decor2.svg" style="position: absolute; top: 75%; left: 60%;">
                 </div>
             </div>
         </article>
@@ -51,54 +60,52 @@
             <p>Восстановление и упрочнение деталей, газопламенное напыление, разные виды покрытий</p>
             <ul>
                 <li class="feature">
-                    <img src="images/features/wear-resistant.svg" />
+                    <img src="images/features/wear-resistant.svg" class="feature-image" />
                     <div class="about-feature">
                         <div class="feature-name">
                             <h3>Износостойкие</h3>
                             <p class="plus">+</p>
                         </div>
-                        <p class="feature-description">Особенно подходит для вращающихся, трущихся деталей,
-                            быстрорежущих
-                            инструментов, увеличивает срок
-                            службы за счет толщины покрытия</p>
+                        <p class="feature-description hidden">Особенно подходит для вращающихся, трущихся деталей,
+                            быстрорежущих инструментов, увеличивает срок службы за счет толщины покрытия</p>
                     </div>
                 </li>
                 <li class="feature">
-                    <img src="images/features/electrical-insulation.svg" />
+                    <img src="images/features/electrical-insulation.svg" class="feature-image" />
                     <div class="about-feature">
                         <div class="feature-name">
                             <h3>Электроизоляционные</h3>
                             <p class="plus">+</p>
                         </div>
-                        <p class="feature-description">Не пропускают электричество, позволяя обезопасить производство,
-                            используются они в основном на
-                            металлических поверхностях, например, стальных трубах, обмотках электрических машин </p>
+                        <p class="feature-description hidden">Не пропускают электричество, позволяя обезопасить
+                            производство,
+                            используются они в основном на металлических поверхностях, например, стальных трубах,
+                            обмотках электрических машин </p>
                     </div>
                 </li>
                 <li class="feature">
-                    <img src="images/features/thermal-barriers.svg" />
+                    <img src="images/features/thermal-barriers.svg" class="feature-image" />
                     <div class="about-feature">
                         <div class="feature-name">
                             <h3>Термобарьерные</h3>
                             <p class="plus">+</p>
                         </div>
-                        <p class="feature-description">Применяются для изолирования компонентов, работающих при высокой
-                            температуре и решают задачу
-                            понижения температуры металлических поверхностей при увеличении рабочей температуры,
-                            например,
-                            газовых турбин</p>
+                        <p class="feature-description hidden">Применяются для изолирования компонентов, работающих при
+                            высокой
+                            температуре и решают задачу понижения температуры металлических поверхностей при увеличении
+                            рабочей температуры, например, газовых турбин</p>
                     </div>
                 </li>
                 <li class="feature">
-                    <img src="images/features/anti-corrosion.svg" />
+                    <img src="images/features/anti-corrosion.svg" class="feature-image" />
                     <div class="about-feature">
                         <div class="feature-name">
                             <h3>Антикоррозийные</h3>
                             <p class="plus">+</p>
                         </div>
-                        <p class="feature-description">Нанесение защитного покрывного слоя, препятствующего
-                            проникновению кислорода и влаги в структуру
-                            поверхности изделия, чтобы избежать ржавления железа, окисления металла</p>
+                        <p class="feature-description hidden">Нанесение защитного покрывного слоя, препятствующего
+                            проникновению кислорода и влаги в структуру поверхности изделия, чтобы избежать ржавления
+                            железа, окисления металла</p>
                     </div>
                 </li>
             </ul>
@@ -130,24 +137,24 @@
             <img src="images/examples-of-work/tuyere.png" />
         </article>
         <article class="main-article pricing">
-            <div id="example">
-                <h2>Формирование цены</h2>
+            <div>
+                <h2 id="example" style="display: inline;">Формирование цены</h2>
             </div>
             <div class="price-elements">
                 <div class="price-element" id="first">
-                    <p>01</p>
+                    <p class="num">01</p>
                     <p>Площадь детали</p>
                 </div>
                 <div class="price-element" id="second">
-                    <p>02</p>
+                    <p class="num">02</p>
                     <p>Сложность геометрии</p>
                 </div>
                 <div class="price-element" id="third">
-                    <p>03</p>
+                    <p class="num">03</p>
                     <p>Толщина покрытия</p>
                 </div>
                 <div class="price-element" id="fourth">
-                    <p>04</p>
+                    <p class="num">04</p>
                     <p>Стоимость материала</p>
                 </div>
             </div>
@@ -155,33 +162,32 @@
         <article class="main-article equipments" id="equipments">
             <h2>Оборудование</h2>
             <div class="full-equipment">
-                <img src="images/equipment/sg-100.png" width="50em" height="50em" />
+                <img src="images/equipment/sg-100.png" width="500rem" height="80%" />
                 <div class="equipment">
                     <h3>Плазматрон SG-100</h3>
                     <div class="equipment-description">
-                        <div>
-                            <p>Описание</p>
-                            <p>Представляет собой многоцелевой плазменный распылитель большой мощности, подходит как для
-                                больших
-                                объемов производств, так и для малых.
-                                Уникальная конструкция SG-100 допускает возможность как внутреннюю, так и внешнюю подачу
-                                порошка.
-                                Внутренняя подача обеспечивает максимальное увлечение частиц в точке наивысшей энергии
-                                внутри
-                                плазменного потока... <a>читать далее</a></p>
+                        <div class="equipment-characteristic">
+                            <p id="description">Описание</p>
+                            <p id="characteristics">Характеристики</p>
                         </div>
                         <div>
-                            <p>Характеристики</p>
+                            <p id="description">Представляет собой многоцелевой плазменный распылитель большой мощности,
+                                подходит как для больших объемов производств, так и для малых. Уникальная конструкция
+                                SG-100 допускает возможность как внутреннюю, так и внешнюю подачу
+                                порошка. Внутренняя подача обеспечивает максимальное увлечение частиц в точке наивысшей
+                                энергии внутри плазменного потока... <a>читать далее</a></p>
                             <!--ПЕРЕНЕСТИ В СТИЛИ  -->
-                            <pre style="white-space: pre-wrap;">Мощность – 80 кВт
-Производительность напыления – до 5 кг/ч
-Рабочее напряжение – до 80 Вт
-Фракционный состав порошков – 40-100 мкм
-Рабочий ток дуги – 800 А
-Порошки – аметаллические, композитные, керамические, конгломерированные
-Ассортимент аппаратных конфигураций портов
-Продольные аноды и катоды
-90-градусный адаптер</pre>
+                            <ul id="characteristics">
+                                <li>Мощность – 80 кВт</li>
+                                <li>Производительность напыления – до 5 кг/ч</li>
+                                <li>Рабочее напряжение – до 80 Вт</li>
+                                <li>Фракционный состав порошков – 40-100 мкм</li>
+                                <li>Рабочий ток дуги – 800 А</li>
+                                <li>Порошки – аметаллические, композитные, керамические, конгломерированные</li>
+                                <li>Ассортимент аппаратных конфигураций портов</li>
+                                <li>Продольные аноды и катоды</li>
+                                <li>90-градусный адаптер</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -219,10 +225,8 @@
     <footer>
         <p>Товарный знак © 2023 Plasma Dynamics – Авторское право сохранено.</p>
     </footer>
-
-    <script>
-
-    </script>
 </body>
+
+<script src="script.js"></script>
 
 </html>
