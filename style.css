@@ -253,6 +253,18 @@ ul {
   align-items: center;
 }
 
+.people {
+  display: flex;
+}
+
+.person > img {
+  width: 100px;
+}
+
+.warranties{
+  display: flex;
+}
+
 .customers-logos {
   display: flex;
   justify-content: center;
