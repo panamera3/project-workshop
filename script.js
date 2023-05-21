@@ -15,3 +15,24 @@ document.addEventListener("click", (event) => {
   );
   featureDesc.classList.toggle("hidden");
 });
+
+
+var descDiv = document.getElementById("description");
+var charDiv = document.getElementById("characteristics");
+var descParagInner = document.getElementById("description-inner");
+var charParagInner = document.getElementById("characteristics-inner");
+
+descDiv.addEventListener("click", () => {
+  descDiv.classList.toggle("active");
+  charDiv.classList.toggle("active");
+  descParagInner.style.display = "inline";
+  charParagInner.style.display = "none";
+});
+
+charDiv.addEventListener("click", () => {
+  charDiv.classList.toggle("active");
+  descDiv.classList.toggle("active");
+  charParagInner.style.display = "inline";
+  descParagInner.style.display = "none";
+});
+

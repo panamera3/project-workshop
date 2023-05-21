@@ -246,11 +246,25 @@ ul {
   flex: 1;
 }
 
-.equipment-characteristic {
+.equipment-characteristics {
   display: flex;
-  flex: 1;
-  justify-content: space-around;
   align-items: center;
+}
+
+.equipment-characteristics div {
+  border-bottom: 1px solid #adadad;
+  width: 50%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.equipment-characteristics p {
+  text-align: center;
+}
+
+.active {
+  border-bottom: 3px solid #47a4b5 !important;
+  transition: border-bottom 0.3s ease-in-out;
 }
 
 .people {
@@ -261,7 +275,7 @@ ul {
   width: 100px;
 }
 
-.warranties{
+.warranties {
   display: flex;
 }
 
