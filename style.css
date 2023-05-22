@@ -3,13 +3,17 @@
   font-family: "Opinion Pro";
   src: url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.eot"); /* IE9*/
   src: url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.eot?#iefix")
-      format("embedded-opentype"), /* IE6-IE8 */
-    url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.woff2")
-      format("woff2"), /* chrome、firefox */
-    url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.woff") format("woff"),/* chrome、firefox */
-    url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.ttf")
-      format("truetype"),/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.svg#Opinion Pro")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.woff2")
+      format("woff2"),
+    /* chrome、firefox */
+      url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.woff")
+      format("woff"),
+    /* chrome、firefox */
+      url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.svg#Opinion Pro")
       format("svg"); /* iOS 4.1- */
 }
 
@@ -37,7 +41,7 @@ h1 {
 h2 {
   font-family: "Opinion Pro", sans-serif;
   font-weight: 350;
-  font-size: 38px;
+  font-size: 36px;
   margin-bottom: 100px;
 }
 
@@ -57,10 +61,7 @@ ul {
   color: #383838;
 }
 
-/*MAIN*/
-.main-article h2 {
-  font-size: 40px;
-}
+/*MAIN*/ 
 
 .navigation {
   display: flex;
@@ -181,10 +182,9 @@ ul {
   display: flex;
 }
 
-.feature-name > h3{
+.feature-name > h3 {
   font-size: 40px;
 }
-
 
 .feature:first-of-type {
   border-top: 1px solid #181818;
@@ -195,8 +195,9 @@ ul {
 }
 
 #about-technology-title {
-  padding: 30px;
   background: url("images/about-technology/white-border-text.svg") no-repeat;
+  padding: 30px;
+  padding-left: 60px;
   background-size: 100% 100%;
   background-position-x: 10%;
   display: inline;
@@ -213,17 +214,29 @@ ul {
 .example-of-work {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .example-of-work > p {
   padding-bottom: 1%;
+  border-bottom: 2px solid #47a4b5;
+}
+
+.example-of-work-advantages {
+  display: flex;
+  justify-content: space-between;
+  flex: 50px;
+  padding-top: 2%;
 }
 
 .example-of-work-numbers {
-  display: flex;
-  border-top: 2px solid #47a4b5;
-  width: 35.625%;
-  padding-top: 2%;
+  max-width: 20%;
+}
+
+.example-of-work-number {
+  font-family: "Opinion Pro", sans-serif;
+  font-size: 40px;
 }
 
 .full-equipment {
@@ -233,22 +246,23 @@ ul {
 }
 
 #pricing-title {
-  padding: 30px;
   background: url("images/pricing/blue-border-text.svg") no-repeat;
+  padding: 30px;
+  padding-left: 60px;
   background-size: 100% 100%;
-  background-position-x: 10%;
   display: inline;
 }
 
 .price-elements {
   display: grid;
+  justify-items: center;
 }
 
 .price-element {
   border-radius: 50%;
   background-color: #47a4b5;
-  width: 13em;
-  height: 13em;
+  width: 14em;
+  height: 14em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -259,6 +273,9 @@ ul {
 
 .price-element p {
   color: #ffffff;
+  font-family: "Opinion Pro", sans-serif;
+  font-weight: 350;
+  font-size: 45px;
 }
 
 #first {
@@ -282,8 +299,9 @@ ul {
 }
 
 #equipments-title {
-  padding: 30px;
   background: url("images/equipment/blue-border-text.svg") no-repeat;
+  padding: 30px;
+  padding-left: 60px;
   background-size: 100% 100%;
   background-position-x: 10%;
   display: inline;
@@ -323,8 +341,9 @@ ul {
 }
 
 #advantages-title {
-  padding: 30px;
   background: url("images/advantages/blue-border-text.svg") no-repeat;
+  padding: 30px;
+  padding-left: 60px;
   background-size: 100% 100%;
   background-position-x: 10%;
   display: inline;
