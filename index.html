@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="fonts/@font-face//e9fbd19ace1c6ff2ff95b701602e32d2?family=Opinion+Pro" rel="stylesheet"
+        type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Плазма Динамика</title>
@@ -33,7 +35,7 @@
                     </ul>
                 </nav>
                 <div class="application-button">
-                    <a href="#application">Оставить заявку</a>
+                    <a href="#application" id="application-btn">Оставить заявку</a>
                 </div>
             </div>
             <div class="info">
@@ -42,17 +44,12 @@
                     <p class="description mission">Наша миссия - делать ваше производство качественнее и экономнее</p>
                     <a href="#features" id="more-details">Подробнее</a>
                 </div>
-                <div style="background: radial-gradient(
-                    circle at center,
-                    rgb(71, 164, 181, 0.3) 0%,
-                    rgba(0, 0, 0, 0) 60%,
-                    rgba(0, 0, 0, 0) 100%
-                  );">
+                <div>
                     <img src="images/header/main-photo.png" width="50%" style="margin-left: auto;
-                        display: block; margin-right: auto; " />
+                        display: block; margin-right: 10%;" />
                     <!--ПЕРЕНЕСТИ В СТИЛИ  -->
-                    <img src="images/header/white-decor1.svg" style="position: absolute; top: 40%; left: 45%;">
-                    <img src="images/header/white-decor2.svg" style="position: absolute; top: 75%; left: 60%;">
+                    <img src="images/header/white-decor1.svg" style="position: absolute; top: 40%; left: 55%;">
+                    <img src="images/header/white-decor2.svg" style="position: absolute; top: 75%; left: 65%;">
                 </div>
             </div>
         </article>
@@ -60,7 +57,7 @@
             <p>Восстановление и упрочнение деталей, газопламенное напыление, разные виды покрытий</p>
             <ul>
                 <li class="feature">
-                    <img src="images/features/wear-resistant.svg" class="feature-image" />
+                    <img src="images/features/wear-resistant.svg"/>
                     <div class="about-feature">
                         <div class="feature-name">
                             <h3>Износостойкие</h3>
@@ -71,7 +68,7 @@
                     </div>
                 </li>
                 <li class="feature">
-                    <img src="images/features/electrical-insulation.svg" class="feature-image" />
+                    <img src="images/features/electrical-insulation.svg"/>
                     <div class="about-feature">
                         <div class="feature-name">
                             <h3>Электроизоляционные</h3>
@@ -84,7 +81,7 @@
                     </div>
                 </li>
                 <li class="feature">
-                    <img src="images/features/thermal-barriers.svg" class="feature-image" />
+                    <img src="images/features/thermal-barriers.svg"/>
                     <div class="about-feature">
                         <div class="feature-name">
                             <h3>Термобарьерные</h3>
@@ -97,7 +94,7 @@
                     </div>
                 </li>
                 <li class="feature">
-                    <img src="images/features/anti-corrosion.svg" class="feature-image" />
+                    <img src="images/features/anti-corrosion.svg"/>
                     <div class="about-feature">
                         <div class="feature-name">
                             <h3>Антикоррозийные</h3>
@@ -111,7 +108,7 @@
             </ul>
         </article>
         <article class="main-article about-technology" id="about-technology">
-            <h2>О технологии</h2>
+            <h2 id="about-technology-title">О технологии</h2>
             <div class="about-technology-content">
                 <p>Газопламенное напыление представляет собой нагрев, плавление, диспергирование расплава и перенос
                     расплавленных частиц ацетилено-кислотного пламени материала на металлическую поверхность детали, где
@@ -138,7 +135,7 @@
         </article>
         <article class="main-article pricing">
             <div>
-                <h2 id="example" style="display: inline;">Формирование цены</h2>
+                <h2 id="pricing-title">Формирование цены</h2>
             </div>
             <div class="price-elements">
                 <div class="price-element" id="first">
@@ -160,7 +157,7 @@
             </div>
         </article>
         <article class="main-article equipments" id="equipments">
-            <h2>Оборудование</h2>
+            <h2 id="equipments-title">Оборудование</h2>
             <div class="full-equipment">
                 <img src="images/equipment/sg-100.png" width="500rem" height="80%" />
                 <div class="equipment">
@@ -199,7 +196,7 @@
             </div>
         </article>
         <article class="main-article advantages" id="advantages">
-            <h2>Почему мы?</h2>
+            <h2 id="advantages-title">Почему мы?</h2>
             <div class="reason">
                 <h3>Квалифицированная команда</h3>
                 <div class="people">
@@ -256,12 +253,16 @@
             </div>
         </article>
         <article class="main-article communication">
-            <div class="application" id="application">
-                <h2>Оставьте заявку для связи с вами</h2>
-                <p>ИМЯ</p>
-                <p>ТЕЛЕФОН</p>
-                <p>E-MAIL</p>
-                <a href="">Отправить</a>
+            <div class="full-application">
+                <div class="application" id="application">
+                    <h2>Оставьте заявку для связи с вами</h2>
+                    <p>ИМЯ</p>
+                    <p>ТЕЛЕФОН</p>
+                    <p>E-MAIL</p>
+                </div>
+                <div class="send-application">
+                    <a href="">Отправить</a>
+                </div>
             </div>
             <div class="contacts description">
                 <p>г. Екатеринбург</p>

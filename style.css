@@ -1,8 +1,24 @@
+/* РАЗМЕР МЕНЬШЕ 1450px МЕНЯТЬ ДИЗАЙН */
+@font-face {
+  font-family: "Opinion Pro";
+  src: url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.eot"); /* IE9*/
+  src: url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.eot?#iefix")
+      format("embedded-opentype"), /* IE6-IE8 */
+    url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.woff2")
+      format("woff2"), /* chrome、firefox */
+    url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.woff") format("woff"),/* chrome、firefox */
+    url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.ttf")
+      format("truetype"),/* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.svg#Opinion Pro")
+      format("svg"); /* iOS 4.1- */
+}
+
 * {
   margin: 0;
   color: black;
   font-size: 20px;
   font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 
 html {
@@ -18,11 +34,11 @@ h1 {
   font-size: 70px;
 }
 
-#example {
-  padding: 30px;
-  background: url("images/pricing/blue-border-text.svg") no-repeat;
-  background-size: 100% 100%;
-  background-position-x: 10%;
+h2 {
+  font-family: "Opinion Pro", sans-serif;
+  font-weight: 350;
+  font-size: 38px;
+  margin-bottom: 100px;
 }
 
 ul {
@@ -50,6 +66,7 @@ ul {
   display: flex;
   margin-bottom: 95px;
   align-items: center;
+  justify-content: space-around;
 }
 
 .navigation ul {
@@ -86,6 +103,7 @@ ul {
 
 .mission {
   font-size: 30px;
+  font-family: "Opinion Pro", sans-serif;
   margin: 50px 0;
 }
 
@@ -97,6 +115,11 @@ ul {
   padding: 10px 30px;
 }
 
+#more-details:hover {
+  border: 3px solid #4db2c4;
+  transition: border 0.2s ease-in-out;
+}
+
 .features {
   display: flex;
   align-items: center;
@@ -106,6 +129,11 @@ ul {
 }
 
 .features > p {
+  font-family: "Opinion Pro";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 40px;
+  line-height: 50px;
   flex-basis: 30%;
   display: inline-block;
   background-repeat: no-repeat;
@@ -115,7 +143,7 @@ ul {
   background: radial-gradient(
     circle at center,
     rgb(71, 164, 181, 0.3) 0%,
-    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 0) 40%,
     rgba(0, 0, 0, 0) 100%
   );
   width: 22.5%;
@@ -128,8 +156,9 @@ ul {
 }
 
 .plus {
-  margin-right: 3em;
+  margin-right: 1em;
   margin-left: auto;
+  font-size: 40px;
 }
 
 .about-feature {
@@ -144,16 +173,18 @@ ul {
 }
 
 .feature > img {
-  width: 8.125%;
+  width: 15%;
+  padding-right: 50px;
 }
 
 .feature-name {
   display: flex;
 }
 
-.feature-image {
-  padding-right: 50px;
+.feature-name > h3{
+  font-size: 40px;
 }
+
 
 .feature:first-of-type {
   border-top: 1px solid #181818;
@@ -161,6 +192,14 @@ ul {
 
 .hidden {
   display: none;
+}
+
+#about-technology-title {
+  padding: 30px;
+  background: url("images/about-technology/white-border-text.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position-x: 10%;
+  display: inline;
 }
 
 .about-technology-content {
@@ -191,6 +230,14 @@ ul {
   display: flex;
   flex: 1;
   justify-content: space-between;
+}
+
+#pricing-title {
+  padding: 30px;
+  background: url("images/pricing/blue-border-text.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position-x: 10%;
+  display: inline;
 }
 
 .price-elements {
@@ -234,6 +281,14 @@ ul {
   grid-row: 2;
 }
 
+#equipments-title {
+  padding: 30px;
+  background: url("images/equipment/blue-border-text.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position-x: 10%;
+  display: inline;
+}
+
 .equipment {
   display: flex;
   flex-direction: column;
@@ -267,6 +322,14 @@ ul {
   transition: border-bottom 0.3s ease-in-out;
 }
 
+#advantages-title {
+  padding: 30px;
+  background: url("images/advantages/blue-border-text.svg") no-repeat;
+  background-size: 100% 100%;
+  background-position-x: 10%;
+  display: inline;
+}
+
 .people {
   display: flex;
 }
@@ -294,6 +357,10 @@ ul {
   border: 1px 0px solid #909090;
   margin: 0px 18px;
 }
+.full-application {
+  display: flex;
+  flex-direction: column;
+}
 
 .communication {
   display: flex;
@@ -301,8 +368,6 @@ ul {
 
 .application {
   margin-right: 60px;
-}
-.application {
   margin-bottom: 20px;
 }
 
@@ -315,15 +380,23 @@ ul {
   margin-top: 34px;
 }
 
-.application a {
+.send-application a {
   color: #ffffff;
   background-color: #383838;
   padding: 19px 115px;
   border-radius: 50px;
+  text-decoration: none;
+  margin-top: 40px;
 }
 
 .contacts {
   font-size: 18px;
+}
+
+#application-btn:hover {
+  border-width: 3px;
+  transition: border-width 0.2s ease-in-out;
+  box-shadow: 0 0 5px white;
 }
 
 /*FOOTER*/
