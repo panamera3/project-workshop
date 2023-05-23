@@ -36,3 +36,4 @@ charDiv.addEventListener("click", () => {
   descParagInner.style.display = "none";
 });
 
+$(".main-article").animated("zoomInUp", "ZoomOutDown");

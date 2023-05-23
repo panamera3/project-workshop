@@ -1,4 +1,5 @@
 /* РАЗМЕР МЕНЬШЕ 1450px МЕНЯТЬ ДИЗАЙН */
+/* ДЛЯ КАРТИНКИ В HEADER-МЕНЬШЕ 1600px */
 @font-face {
   font-family: "Opinion Pro";
   src: url("fonts/@font-face/e9fbd19ace1c6ff2ff95b701602e32d2.eot"); /* IE9*/
@@ -30,7 +31,7 @@ html {
 }
 
 body {
-  background: linear-gradient(#383838, #ffffff 65%);
+  background: linear-gradient(#383838, #ffffff 50%);
   padding: 1em 8em;
 }
 
@@ -42,7 +43,6 @@ h2 {
   font-family: "Opinion Pro", sans-serif;
   font-weight: 350;
   font-size: 36px;
-  margin-bottom: 100px;
 }
 
 ul {
@@ -61,7 +61,25 @@ ul {
   color: #383838;
 }
 
-/*MAIN*/ 
+/*MAIN*/
+.title-container {
+  margin-bottom: 100px;
+}
+
+.main-article {
+  opacity: 0;
+  animation: ani 2.5s forwards;
+  margin-bottom: 200px;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .navigation {
   display: flex;
@@ -171,6 +189,7 @@ ul {
   border-bottom: 1px solid #181818;
   padding-top: 20px;
   padding-bottom: 20px;
+  align-items: center;
 }
 
 .feature > img {
@@ -205,10 +224,12 @@ ul {
 
 .about-technology-content {
   display: flex;
+  margin-top: 100px;
 }
 
 .examples-of-work {
   display: flex;
+  justify-content: center;
 }
 
 .example-of-work {
@@ -216,6 +237,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
 .example-of-work > p {
@@ -225,7 +247,7 @@ ul {
 
 .example-of-work-advantages {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex: 50px;
   padding-top: 2%;
 }
@@ -237,6 +259,10 @@ ul {
 .example-of-work-number {
   font-family: "Opinion Pro", sans-serif;
   font-size: 40px;
+}
+
+.example-of-work-image {
+  margin-left: 100px;
 }
 
 .full-equipment {
@@ -266,7 +292,7 @@ ul {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   box-shadow: 0 0 20px #47a4b5;
 }
@@ -313,6 +339,10 @@ ul {
   width: 48.125%;
 }
 
+.equipment-name {
+  font-size: 40px;
+}
+
 .equipment-description {
   display: flex;
   flex-direction: column;
@@ -349,12 +379,25 @@ ul {
   display: inline;
 }
 
+.reason > h3 {
+  font-family: "Opinion Pro";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 50px;
+  line-height: 70px;
+}
+
 .people {
   display: flex;
 }
 
+.person:not(:last-child){
+  margin-right: 30px;
+}
+
 .person > img {
   width: 100px;
+  border-radius: 50%;
 }
 
 .warranties {
