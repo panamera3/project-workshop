@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <img src="images/header/blue-circle.svg" style="position: absolute; top: 10%; right: 5%; width: 25%;"/>
     <main>
         <article class="main-article title">
             <div class="navigation">
@@ -213,34 +214,36 @@
                 <div class="people">
                     <div class="person">
                         <img src="images/advantages/team/first.jpeg" />
-                        <p>Имя Фамилия</p>
-                        <p>Должность</p>
+                        <p class="full-name">Имя Фамилия</p>
+                        <p class="description position-work">Должность</p>
                     </div>
                     <div class="person">
                         <img src="images/advantages/team/first.jpeg" />
-                        <p>Имя Фамилия</p>
-                        <p>Должность</p>
+                        <p class="full-name">Имя Фамилия</p>
+                        <p class="description position-work">Должность</p>
                     </div>
                     <div class="person">
                         <img src="images/advantages/team/first.jpeg" />
-                        <p>Имя Фамилия</p>
-                        <p>Должность</p>
+                        <p class="full-name">Имя Фамилия</p>
+                        <p class="description position-work">Должность</p>
                     </div>
                     <div class="person">
                         <img src="images/advantages/team/first.jpeg" />
-                        <p>Имя Фамилия</p>
-                        <p>Должность</p>
+                        <p class="full-name">Имя Фамилия</p>
+                        <p class="description position-work">Должность</p>
                     </div>
                 </div>
             </div>
-            <div class="reason">
+            <div class="reason" style="display: none;">
                 <h3>Индивидуальный подход</h3>
-                <p>Знакомимся с вашей проблемой </p>
-                <p>Придумываем решение относительно запроса</p>
-                <p>Подбираем материал под конкретную задачу</p>
-                <p>Рассчитываем стоимость</p>
+                <div class="approach-steps">
+                    <p>Знакомимся с вашей проблемой </p>
+                    <p>Придумываем решение относительно запроса</p>
+                    <p>Подбираем материал под конкретную задачу</p>
+                    <p>Рассчитываем стоимость</p>
+                </div>
             </div>
-            <div class="reason">
+            <div class="reason" style="display: none;">
                 <h3>Качество</h3>
                 <div class="warranties">
                     <div class="warranty">
@@ -255,7 +258,9 @@
             </div>
         </article>
         <article class="main-article customers">
-            <h2>Заказчики</h2>
+            <div class="title-container">
+                <h2 id="customers-title">Заказчики</h2>
+            </div>
             <!-- https://www.youtube.com/watch?v=QKuMr575vlQ -->
             <div class="customers-logos">
                 <img src="images/customers/NLMK-logo.jpg" class="customer-logo" />
@@ -266,10 +271,10 @@
         <article class="main-article communication">
             <div class="full-application">
                 <div class="application" id="application">
-                    <h2>Оставьте заявку для связи с вами</h2>
-                    <p>ИМЯ</p>
-                    <p>ТЕЛЕФОН</p>
-                    <p>E-MAIL</p>
+                    <h3>Оставьте заявку для связи с вами</h3>
+                    <p>Имя</p>
+                    <p>Телефон</p>
+                    <p>E-mail</p>
                 </div>
                 <div class="send-application">
                     <a href="">Отправить</a>
@@ -283,9 +288,14 @@
         </article>
     </main>
 
+    <!-- ПЕРЕНЕСТИ В СТИЛИ  -->
+    <img src="images/footer/decor-lines.svg" style="float: right; padding-right: 400px; " />
+
     <footer>
         <p>Товарный знак © 2023 Plasma Dynamics – Авторское право сохранено.</p>
     </footer>
+    
+    
 </body>
 
 <script src="script.js"></script>
