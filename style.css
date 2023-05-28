@@ -156,9 +156,8 @@ ul {
 .features {
   display: flex;
   align-items: center;
+  margin-top: 100px;
   /*background: linear-gradient(#727171, #c3c3c3);*/
-  padding-top: 10%;
-  padding-bottom: 5%;
 }
 
 .features > p {
@@ -236,9 +235,12 @@ ul {
   display: inline;
 }
 
+.about-technology {
+  padding-top: 15%;
+}
+
 .about-technology-content {
   display: flex;
-  margin-top: 100px;
   justify-content: space-evenly;
 }
 
@@ -282,12 +284,6 @@ ul {
 
 .example-of-work-image {
   margin-left: 100px;
-}
-
-.full-equipment {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
 }
 
 #pricing-title {
@@ -343,6 +339,10 @@ ul {
   grid-row: 2;
 }
 
+.equipments { 
+  margin: 20% 0px;
+}
+
 #equipments-title {
   background: url("images/equipment/blue-border-text.svg") no-repeat;
   padding: 30px;
@@ -352,10 +352,24 @@ ul {
   display: inline;
 }
 
+.full-equipment {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
 .equipment {
   display: flex;
   flex-direction: column;
-  width: 48.125%;
+  width: 45%;
+}
+
+.equipment h3 {
+  color: white;
+}
+
+.equipment p {
+  color: white;
 }
 
 .equipment-name {
@@ -467,7 +481,6 @@ ul {
   border: none;
   margin: 0px 32px;
 }
-
 
 /*
 .customer-logo {

@@ -1,12 +1,13 @@
 <svg width="417" height="420" viewBox="0 0 417 420" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_251_2195)">
+<path d="M52 117L60.5 53L114 93L158 53L199 93L247.5 61.5L256 117L335 93L309.5 176.5L335 187.5L318 216L364.5 255.5L325 303.5L364.5 369" stroke="#47A4B5" stroke-width="2"/>
+<g filter="url(#filter0_f_251_2193)">
 <path d="M52 117L60.5 53L114 93L158 53L199 93L247.5 61.5L256 117L335 93L309.5 176.5L335 187.5L318 216L364.5 255.5L325 303.5L364.5 369" stroke="#47A4B5" stroke-width="2.5"/>
 </g>
 <defs>
-<filter id="filter0_f_251_2195" x="0.761719" y="0.722656" width="415.484" height="418.923" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_f_251_2193" x="0.761719" y="0.722656" width="415.484" height="418.923" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_251_2195"/>
+<feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_251_2193"/>
 </filter>
 </defs>
 </svg>
