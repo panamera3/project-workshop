@@ -16,7 +16,6 @@ document.addEventListener("click", (event) => {
   featureDesc.classList.toggle("hidden");
 });
 
-
 var descDiv = document.getElementById("description");
 var charDiv = document.getElementById("characteristics");
 var descParagInner = document.getElementById("description-inner");
@@ -35,3 +34,4 @@ charDiv.addEventListener("click", () => {
   charParagInner.style.display = "inline";
   descParagInner.style.display = "none";
 });
+
