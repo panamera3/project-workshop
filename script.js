@@ -35,5 +35,3 @@ charDiv.addEventListener("click", () => {
   charParagInner.style.display = "inline";
   descParagInner.style.display = "none";
 });
-
-$(".main-article").animated("zoomInUp", "ZoomOutDown");

@@ -227,7 +227,6 @@ ul {
   display: none;
 }
 
-
 #about-technology-title {
   background: url("images/about-technology/white-border-text.svg") no-repeat;
   padding: 30px;
@@ -243,7 +242,7 @@ ul {
   justify-content: space-evenly;
 }
 
-.about-technology-content > p{
+.about-technology-content > p {
   width: 40%;
 }
 
@@ -421,12 +420,12 @@ ul {
   border-radius: 50%;
 }
 
-.full-name{
+.full-name {
   font-weight: 300;
   font-size: 24px;
 }
 
-.position-work{
+.position-work {
   font-weight: 300;
   font-size: 18px;
 }
@@ -450,16 +449,40 @@ ul {
   align-items: center;
 }
 
+#first-logo {
+  display: inline-block;
+  vertical-align: middle;
+  border-right: 1px solid black;
+  padding-right: 32px;
+}
+
+#third-logo {
+  display: inline-block;
+  vertical-align: middle;
+  border-left: 1px solid black;
+  padding-left: 32px;
+}
+
+#customer-logo-center {
+  border: none;
+  margin: 0px 32px;
+}
+
+
+/*
 .customer-logo {
   width: 300px;
   margin: 0px 64px;
 }
 
 #customer-logo-center {
-  border: 1px 0px solid #909090;
+  display: inline-block;
+  border-left: 1px solid #909090;
+  border-right: 1px solid #909090;
   margin: 0px 18px;
+  height: 100%;
 }
-
+*/
 .full-application {
   display: flex;
   flex-direction: column;
@@ -481,7 +504,7 @@ ul {
   margin-top: 34px;
 }
 
-.send-application{
+.send-application {
   margin-top: 40px;
 }
 
