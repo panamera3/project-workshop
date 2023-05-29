@@ -174,7 +174,7 @@ ul {
   background-size: contain;
 
   width: 50%;
-  height: 50%; 
+  height: 50%;
   margin-bottom: 1em;
   /*
   padding: 10em 50px;
@@ -252,7 +252,7 @@ ul {
   justify-content: center;
 }
 
-.margin-top-for-examples{
+.margin-top-for-examples {
   margin-top: 14%;
 }
 
@@ -574,4 +574,34 @@ form label {
   transition: border-width 0.2s ease-in-out;
   box-shadow: 0 0 5px white;
 }
-/*FOOTER*/
+
+/*SLIDER*/
+.reason {
+  display: none;
+}
+
+.active-reason {
+  display: block;
+  animation: fadeImg 0.8s;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+}
+
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

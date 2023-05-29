@@ -244,6 +244,7 @@
                 </div>
             </div>
         </article>
+
         <article class="main-article advantages" id="advantages">
             <img src="images/advantages/gray-ellipse.svg" style="position: absolute; top: 580%; left: 0;" />
             <img src="images/advantages/blue-ellipse.svg" style="position: absolute; top: 580%; right: 0; " />
@@ -251,46 +252,54 @@
                 <h2 id="advantages-title">Почему мы?</h2>
             </div>
             <!-- ПЕРЕНЕСТИ В СТИЛИ -->
-            <div class="reason" style="width: 80%;">
-                <div class="reason-inner" style="width: 50%;">
-                    <h3>Квалифицированная команда</h3>
-                    <div>
-                        <p style="font-size: 24px; margin-right: 10%;">Нашими сотрудниками являются кандидаты
-                            технических наук в области материаловедения, химии
-                            твердого тела, металлургии и плазменных технологий, специалисты компании имеют стаж более 10
-                            лет
-                            работы в области создания упрочняющих покрытий</p>
+            <div class="reasons">
+                <div class="reason active-reason" style="width: 80%;">
+                    <div class="reason-inner" style="width: 50%;">
+                        <h3>Квалифицированная команда</h3>
+                        <div>
+                            <p style="font-size: 24px; margin-right: 10%;">Нашими сотрудниками являются кандидаты
+                                технических наук в области материаловедения, химии
+                                твердого тела, металлургии и плазменных технологий, специалисты компании имеют стаж
+                                более 10
+                                лет
+                                работы в области создания упрочняющих покрытий</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="reason" style="display: none;">
-                <h3>Индивидуальный подход</h3>
-                <div class="approach-steps">
-                    <p>Знакомимся с вашей проблемой </p>
-                    <p>Придумываем решение относительно запроса</p>
-                    <p>Подбираем материал под конкретную задачу</p>
-                    <p>Рассчитываем стоимость</p>
-                </div>
-            </div>
-            <div class="reason" style="display: none;">
-                <h3>Качество</h3>
-                <div class="warranties">
-                    <div class="warranty">
-                        <img src="images/advantages/quality/warranty1.svg" />
-                        <p>Проверенные поставщики с гарантией на все материалы: порошки, проволоки</p>
+                <div class="reason">
+                    <h3>Индивидуальный подход</h3>
+                    <div class="approach-steps">
+                        <p>Знакомимся с вашей проблемой </p>
+                        <p>Придумываем решение относительно запроса</p>
+                        <p>Подбираем материал под конкретную задачу</p>
+                        <p>Рассчитываем стоимость</p>
                     </div>
-                    <div class="warranty">
-                        <img src="images/advantages/quality/warranty2.svg" />
-                        <p>Предоставляем гарантию на наши покрытия</p>
+                </div>
+                <div class="reason">
+                    <h3>Качество</h3>
+                    <div class="warranties">
+                        <div class="warranty">
+                            <img src="images/advantages/quality/warranty1.svg" />
+                            <p>Проверенные поставщики с гарантией на все материалы: порошки, проволоки</p>
+                        </div>
+                        <div class="warranty">
+                            <img src="images/advantages/quality/warranty2.svg" />
+                            <p>Предоставляем гарантию на наши покрытия</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- ПЕРЕНЕСТИ В СТИЛИ -->
-            <div style="display: flex; justify-content: center; margin-top: 5em;">
-                <img src="images/advantages/left-arrow.svg" class="arrow" />
-                <img src="images/advantages/right-arrow.svg" class="arrow" />
+            <div class="arrows" style="display: flex; justify-content: center; margin-top: 5em;">
+                <button class="previous">
+                    <img src="images/advantages/left-arrow.svg" class="arrow" />
+                </button>
+                <button class="next">
+                    <img src="images/advantages/right-arrow.svg" class="arrow" />
+                </button>
             </div>
         </article>
+
         <article class="main-article customers">
             <div class="title-container">
                 <h2 id="customers-title">Заказчики</h2>
@@ -349,5 +358,6 @@
 
 <script src="script.js"></script>
 <script src="animation/animate-css.js"></script>
+<script src="slider.js"></script>
 
 </html>

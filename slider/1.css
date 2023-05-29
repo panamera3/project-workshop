@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0;
+  background: #fef8f9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 20px 5px;
+  color: #3c376f;
+  font-size: 2rem;
+}
+
+button span {
+  position: relative;
+  display: inline-block;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.images {
+  max-width: 100%;
+  display: none;
+  box-shadow: 10px 10px 20px 0 rgba(94,47,59,0.2);
+}
+
+.active {
+  display: block;
+  animation: fadeImg 0.8s;
+}
+
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
