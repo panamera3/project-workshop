@@ -401,6 +401,14 @@ ul {
   text-align: center;
 }
 
+#characteristics-inner li {
+  margin-bottom: 0.5em;
+}
+
+#characteristics-inner p {
+  font-weight: 400;
+}
+
 .active {
   border-bottom: 3px solid #47a4b5 !important;
   transition: border-bottom 0.3s ease-in-out;
