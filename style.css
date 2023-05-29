@@ -483,14 +483,14 @@ ul {
 #first-logo {
   display: inline-block;
   vertical-align: middle;
-  border-right: 1px solid black;
+  border-right: 1px solid #909090;
   padding-right: 32px;
 }
 
 #third-logo {
   display: inline-block;
   vertical-align: middle;
-  border-left: 1px solid black;
+  border-left: 1px solid #909090;
   padding-left: 32px;
 }
 
@@ -513,6 +513,7 @@ ul {
   height: 100%;
 }
 */
+
 .full-application {
   display: flex;
   flex-direction: column;
