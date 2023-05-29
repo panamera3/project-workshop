@@ -420,9 +420,14 @@ ul {
 }
 
 .reason {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
+  display: none;
+  width: 80%;
+  height: 22em;
+}
+
+.reason-inner {
+  margin-left: auto;
+  width: 50%;
 }
 
 .reason-inner > h3 {
@@ -432,6 +437,11 @@ ul {
   font-size: 50px;
   line-height: 70px;
   margin-bottom: 2em;
+}
+
+.reason-inner p {
+  font-size: 24px;
+  margin-right: 10%;
 }
 
 .arrow {
@@ -553,23 +563,9 @@ form label {
 }
 
 /*SLIDER*/
-.reason {
-  display: none;
-  width: 80%;
-  height: 20em;
-}
-
 .active-reason {
   display: block;
   animation: fadeImg 0.8s;
-}
-
-.reason-inner{
-  width: 50%;
-}
-
-.reason-inner p{
-  font-size: 24px; margin-right: 10%;
 }
 
 button {
