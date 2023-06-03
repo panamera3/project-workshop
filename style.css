@@ -202,7 +202,7 @@ ul {
   padding-top: 20px;
   padding-bottom: 20px;
   align-items: center;
-  max-width: 50em;
+  max-width: 30rem;
 }
 
 .feature > img {
@@ -246,6 +246,9 @@ ul {
 
 .about-technology-content > p {
   width: 40%;
+}
+.about-technology-content-text > hr {
+  margin: 1em 0;
 }
 
 .examples-of-work {
