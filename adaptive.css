@@ -28,6 +28,23 @@
     flex-direction: column;
   }
 
+  .customer-logo {
+    padding: 1em 0;
+  }
+
+  #customer-logo-center {
+    border-top: 1px solid #909090;
+    border-bottom: 1px solid #909090;
+  }
+
+  #first-logo {
+    border-right: none;
+  }
+
+  #third-logo {
+    border-left: none;
+  }
+
   #img-white-background {
     display: none;
   }
