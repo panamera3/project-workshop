@@ -411,6 +411,7 @@ ul {
 
 .equipment-characteristics p {
   text-align: center;
+  color: #ADADAD;
 }
 
 #characteristics-inner li {
@@ -424,6 +425,10 @@ ul {
 .active {
   border-bottom: 3px solid #47a4b5 !important;
   transition: border-bottom 0.3s ease-in-out;
+}
+
+.active > p{
+  color: #ffffff;
 }
 
 .advantages {
