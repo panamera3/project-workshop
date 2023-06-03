@@ -5,6 +5,7 @@ function offset(el) {
   console.log(rect);
   return {
     top: rect.top + scrollTop,
+    bottom: rect.top + scrollTop + rect.height,
     left: rect.left + scrollLeft,
     center: rect.left + (rect.right - rect.left) / 2,
     height: rect.height,
@@ -100,16 +101,40 @@ const grayEllipsePos = () => {
 };
 
 const advantagesGrayEllipsePos = () => {
-    const advantagesGrayEllipse = document.querySelector("#advantages-gray-ellipse");
-    const advantagesGrayEllipsePosition = offset(document.querySelector("#advantages"));
-    let advantagesGrayEllipseTop = advantagesGrayEllipsePosition.top - advantagesGrayEllipsePosition.height*0.2;
-    advantagesGrayEllipse.style.cssText = `position: absolute; top: ${advantagesGrayEllipseTop}px; left: 0;`;
+  const advantagesGrayEllipse = document.querySelector(
+    "#advantages-gray-ellipse"
+  );
+  const advantagesGrayEllipsePosition = offset(
+    document.querySelector("#advantages")
+  );
+  let advantagesGrayEllipseTop =
+    advantagesGrayEllipsePosition.top -
+    advantagesGrayEllipsePosition.height * 0.2;
+  advantagesGrayEllipse.style.cssText = `position: absolute; top: ${advantagesGrayEllipseTop}px; left: 0;`;
 };
+
 const advantagesBlueEllipsePos = () => {
-    const advantagesBlueEllipse = document.querySelector("#advantages-blue-ellipse");
-    const advantagesBlueEllipsePosition = offset(document.querySelector("#advantages"));
-    let advantagesBlueEllipseTop = advantagesBlueEllipsePosition.top - advantagesBlueEllipsePosition.height*0.2;
-    advantagesBlueEllipse.style.cssText = `position: absolute; top: ${advantagesBlueEllipseTop}px; right: 0;`;
+  const advantagesBlueEllipse = document.querySelector(
+    "#advantages-blue-ellipse"
+  );
+  const advantagesBlueEllipsePosition = offset(
+    document.querySelector("#advantages")
+  );
+  let advantagesBlueEllipseTop =
+    advantagesBlueEllipsePosition.top -
+    advantagesBlueEllipsePosition.height * 0.2;
+  advantagesBlueEllipse.style.cssText = `position: absolute; top: ${advantagesBlueEllipseTop}px; right: 0;`;
+};
+
+const decorLinesPos = () => {
+  const decorLines = document.querySelector("#decor-lines");
+  const decorLinesPositionTop = offset(document.querySelector("#application"));
+  const decorLinesPositionLeft = offset(document.querySelector(".contacts"));
+  let decorLinesTop =
+    decorLinesPositionTop.bottom - decorLinesPositionTop.height * 0.3;
+  let decorLinesLeft =
+    decorLinesPositionLeft.left + decorLinesPositionLeft.width * 1.2;
+  decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; left: ${decorLinesLeft}px`;
 };
 
 function imgPositions() {
@@ -123,6 +148,7 @@ function imgPositions() {
   grayEllipsePos();
   advantagesGrayEllipsePos();
   advantagesBlueEllipsePos();
+  decorLinesPos();
 }
 
 window.addEventListener("load", () => {
