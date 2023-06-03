@@ -29,10 +29,12 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  background-color: yellow;
 }
 
 body {
-  background: linear-gradient(#383838, #ffffff 50%) no-repeat;
+  background: linear-gradient(#383838, #ffffff 45%) no-repeat;
   padding: 1em 5em;
 }
 
@@ -196,13 +198,20 @@ ul {
   width: 100%;
 }
 
+.several-features{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .feature {
   display: flex;
   border-bottom: 1px solid #181818;
   padding-top: 20px;
   padding-bottom: 20px;
   align-items: center;
-  max-width: 30rem;
+  width: 35rem;
+  justify-content: end;
 }
 
 .feature > img {

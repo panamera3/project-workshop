@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -14,12 +14,11 @@
 
 <body>
     <div class="container">
-        <img src="images/blue-ellipse.svg" id="img-blue-ellipse"
-            style="position: absolute; top: 2%; right: 0; width: 40%;" />
         <img src="images/header/white-background.svg" id="img-white-background"
             style="position: absolute; top: 0; left: 0; width: 65%;" />
-        <img src="images/features/blue-ellipse.svg" id="img-features-blue-ellipse"
-            style="position: absolute; top: 160%; left: 30%;" />
+        <img src="images/blue-ellipse.svg" id="img-blue-ellipse"
+            style="position: absolute; top: 2%; right: 0; width: 40%;" />
+        <img src="images/features/blue-ellipse.svg" id="img-features-blue-ellipse" />
         <img src="images/equipment/gray-background.svg" id="gray-background"
             style="position: absolute; top: 410%; right: 0; width: 60%;" />
         <main>
@@ -87,10 +86,11 @@
                 </div>
             </article>
             <article class="main-article features" id="features">
-                <p>Восстановление и упрочнение деталей, газопламенное напыление, разные виды покрытий</p>
+                <p id="position-img-features-blue-ellipse">Восстановление и упрочнение деталей, газопламенное напыление,
+                    разные виды покрытий</p>
                 <ul>
                     <div style="display: flex; flex: 1; justify-content: space-around;">
-                        <div style="margin-right: 5em;">
+                        <div class="several-features" style="margin-right: 5em;">
                             <li class="feature">
                                 <img src="images/features/wear-resistant.svg" />
                                 <div class="about-feature">
@@ -119,7 +119,7 @@
                                 </div>
                             </li>
                         </div>
-                        <div style="margin-left: 5em;">
+                        <div class="several-features" style="margin-left: 5em;">
                             <li class="feature">
                                 <img src="images/features/thermal-barriers.svg" />
                                 <div class="about-feature">
@@ -387,7 +387,7 @@
 </body>
 
 <script src="script.js"></script>
-<script src="animation/animate-css.js"></script>
 <script src="slider.js"></script>
+<script src="adaptive.js"></script>
 
 </html>

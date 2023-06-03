@@ -1,0 +1,9 @@
+@media screen and (max-width: 1450px) {
+  .price-elements {
+    display: flex;
+    flex-direction: column;
+  }
+  .customers-logos{
+    flex-direction: column;
+  }
+}
