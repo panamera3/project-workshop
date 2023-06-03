@@ -198,7 +198,7 @@ ul {
   width: 100%;
 }
 
-.several-features{
+.several-features {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -210,8 +210,9 @@ ul {
   padding-top: 20px;
   padding-bottom: 20px;
   align-items: center;
-  width: 35rem;
+  width: 25em;
   justify-content: end;
+  max-height: 200px;
 }
 
 .feature > img {

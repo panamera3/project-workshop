@@ -30,5 +30,8 @@ function imgPositions() {
   const grayBackground = document.querySelector("#gray-background");
 }
 
-window.addEventListener("load", imgPositions);
+window.addEventListener("load", () => {
+  imgPositions();
+  window.dispatchEvent(new Event("resize"));
+});
 window.addEventListener("resize", imgPositions);
