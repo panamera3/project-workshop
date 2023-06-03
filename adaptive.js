@@ -7,12 +7,11 @@ function offset(el) {
     top: rect.top + scrollTop,
     left: rect.left + scrollLeft,
     center: rect.left + (rect.right - rect.left) / 2,
+    height: rect.height,
   };
 }
 
 function imgPositions() {
-  const imgBlueEllipse = document.querySelector("#img-blue-ellipse");
-
   const imgFeaturesBlueEllipse = document.querySelector(
     "#img-features-blue-ellipse"
   );
@@ -28,6 +27,13 @@ function imgPositions() {
   imgFeaturesBlueEllipse.style.cssText = `position: absolute; top: ${imgFeaturesBlueEllipseTop}px; left: ${imgFeaturesBlueEllipseLeft}px;`;
 
   const grayBackground = document.querySelector("#gray-background");
+  const positionGrayBackground = offset(
+    document.querySelector(".full-equipment")
+  );
+  let grayBackgroundTop =
+    positionGrayBackground.top -
+    (grayBackground.height - positionGrayBackground.height) / 2;
+  grayBackground.style.cssText = `position: absolute; top: ${grayBackgroundTop}px; right: 0; width: ${60}%;`;
 }
 
 window.addEventListener("load", () => {

@@ -1,9 +1,40 @@
+/* Добавить для 770px, 1065px */
 @media screen and (max-width: 1450px) {
   .price-elements {
     display: flex;
     flex-direction: column;
   }
-  .customers-logos{
+
+  .customers-logos {
     flex-direction: column;
+  }
+
+  #img-white-background {
+    display: none;
+  }
+
+  .main-info > h1 {
+    color: #ffffff;
+  }
+
+  .main-info > p {
+    color: #ffffff;
+  }
+
+  .navigation ul a {
+    color: #ffffff;
+  }
+
+  .application-button > a {
+    padding: 0.5em 1em;
+  }
+
+  #plazm {
+    width: 10em;
+    height: 10em;
+  }
+
+  .full-equipment {
+    height: 25rem;
   }
 }
