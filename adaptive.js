@@ -99,6 +99,9 @@ const grayEllipsePos = () => {
   grayEllipse.style.cssText = `position: absolute; top: ${grayEllipseTop}px; right: 0;`;
 };
 
+const advantagesGrayEllipse = () => {}
+const advantagesBlueEllipse = () => {};
+
 function imgPositions() {
   imgFeaturesBlueEllipsePos();
   grayBackgroundPos();
@@ -108,6 +111,7 @@ function imgPositions() {
   blueEllipsePos();
   blueLadderLinePos();
   grayEllipsePos();
+  advantagesGrayEllipse();
 }
 
 window.addEventListener("load", () => {

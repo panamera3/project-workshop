@@ -1,7 +1,27 @@
 @media screen and (max-width: 1450px) {
   .price-elements {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-items: center;
+  }
+
+  #first {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #second {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  #third {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  #fourth {
+    grid-column: 2;
+    grid-row: 4;
   }
 
   .customers-logos {
@@ -39,15 +59,14 @@
 }
 
 @media screen and (max-width: 1065px) {
-  .example-of-work-image{
+  .example-of-work-image {
     margin-left: 0;
   }
 
-  .example-of-work-numbers{
+  .example-of-work-numbers {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 770px) {
-
 }

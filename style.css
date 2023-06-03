@@ -310,11 +310,6 @@ ul {
   display: inline;
 }
 
-.price-elements {
-  display: grid;
-  justify-items: center;
-}
-
 .price-element {
   border-radius: 50%;
   background-color: #47a4b5;
@@ -333,6 +328,11 @@ ul {
   font-family: "Opinion Pro", sans-serif;
   font-weight: 350;
   font-size: 40px;
+}
+
+.price-elements {
+  display: grid;
+  justify-items: center;
 }
 
 #first {
