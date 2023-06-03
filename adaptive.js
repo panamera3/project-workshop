@@ -57,7 +57,7 @@ const whiteDecor2Pos = () => {
     document.querySelector("#header-main-image")
   );
   let whiteDecor2Top =
-    whiteDecor2Position.top + whiteDecor2Position.height + whiteDecor2.height;
+    whiteDecor2Position.top + whiteDecor2Position.height + whiteDecor2.height * 0.5;
   let whiteDecor2Left = whiteDecor2Position.left * 1.05;
   whiteDecor2.style.cssText = `position: absolute; top: ${whiteDecor2Top}px; left: ${whiteDecor2Left}px;`;
 };

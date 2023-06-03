@@ -15,6 +15,18 @@
     color: #ffffff;
   }
 
+  #logo{
+    display: none;
+  }
+
+  #logo2{
+    display: inline;
+  }
+
+  .application-button > a {
+    margin: 0px 1em 0px 1em;
+  }
+
   .price-elements {
     display: grid;
     justify-items: center;
@@ -102,6 +114,14 @@
 
   .full-equipment {
     height: 15rem;
+  }
+
+  nav{
+    max-width: 40%;
+  }
+
+  #white-decor1{
+    display: none;
   }
 }
 

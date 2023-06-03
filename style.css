@@ -83,6 +83,10 @@ ul {
   }
 }
 
+nav{
+  max-width: 60%;
+}
+
 .navigation {
   display: flex;
   margin-bottom: 95px;
@@ -92,6 +96,8 @@ ul {
 
 .navigation ul {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .navigation ul a {
@@ -101,18 +107,8 @@ ul {
   font-size: 15px;
 }
 
-.application > h3 {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 50px;
-}
-
-.application > p {
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+#logo2 {
+  display: none;
 }
 
 .application-button > a {
@@ -123,6 +119,12 @@ ul {
   border-radius: 50px;
   padding: 0.8em 4.5em;
   font-size: 15px;
+}
+
+#application-btn:hover {
+  border-width: 3px;
+  transition: border-width 0.2s ease-in-out;
+  box-shadow: 0 0 5px white;
 }
 
 .info {
@@ -544,6 +546,29 @@ ul {
 }
 */
 
+.application > h3 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.application > p {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.application p {
+  color: #909090;
+  border-bottom: 1px solid #909090;
+  width: 26.25vw;
+  padding-bottom: 13px;
+  font-size: 11px;
+  margin-top: 34px;
+}
+
 .full-application {
   display: flex;
   flex-direction: column;
@@ -554,15 +579,6 @@ ul {
 
 .communication {
   display: flex;
-}
-
-.application p {
-  color: #909090;
-  border-bottom: 1px solid #909090;
-  width: 26.25vw;
-  padding-bottom: 13px;
-  font-size: 11px;
-  margin-top: 34px;
 }
 
 form label {
@@ -593,12 +609,6 @@ form label {
 
 .contacts {
   font-size: 18px;
-}
-
-#application-btn:hover {
-  border-width: 3px;
-  transition: border-width 0.2s ease-in-out;
-  box-shadow: 0 0 5px white;
 }
 
 /*SLIDER*/
