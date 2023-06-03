@@ -1,4 +1,20 @@
 @media screen and (max-width: 1450px) {
+  #img-white-background {
+    display: none;
+  }
+
+  .main-info > h1 {
+    color: #ffffff;
+  }
+
+  .main-info > p {
+    color: #ffffff;
+  }
+
+  .navigation ul a {
+    color: #ffffff;
+  }
+
   .price-elements {
     display: grid;
     justify-items: center;
@@ -24,6 +40,26 @@
     grid-row: 4;
   }
 
+  #plazm {
+    width: 20em;
+  }
+
+  .full-equipment {
+    height: 25rem;
+  }
+
+  .features-container {
+    flex-direction: column;
+  }
+
+  .several-features:first-child {
+    margin-right: 0;
+  }
+
+  .several-features:last-child {
+    margin-left: 0;
+  }
+
   .customers-logos {
     flex-direction: column;
   }
@@ -45,45 +81,8 @@
     border-left: none;
   }
 
-  #img-white-background {
-    display: none;
-  }
-
-  .main-info > h1 {
-    color: #ffffff;
-  }
-
-  .main-info > p {
-    color: #ffffff;
-  }
-
-  .navigation ul a {
-    color: #ffffff;
-  }
-
   .application-button > a {
     padding: 0.5em 1em;
-  }
-
-  #plazm {
-    width: 10em;
-    height: 10em;
-  }
-
-  .full-equipment {
-    height: 25rem;
-  }
-
-  .features-container{
-    flex-direction: column;
-  }
-
-  .several-features:first-child {
-    margin-right: 0;
-  }
-  
-  .several-features:last-child {
-    margin-left: 0;
   }
 }
 
@@ -94,6 +93,15 @@
 
   .example-of-work-numbers {
     width: 50%;
+  }
+
+  #plazm {
+    width: 15em;
+    height: 15em;
+  }
+
+  .full-equipment {
+    height: 15rem;
   }
 }
 
