@@ -83,6 +83,22 @@ const blueEllipsePos = () => {
   blueEllipse.style.cssText = `position: absolute; top: ${blueEllipseTop}px; left: -30%; height: 100%;`;
 };
 
+const blueLadderLinePos = () => {
+  const blueLadderLine = document.querySelector("#blue-ladder-line");
+  const blueLadderLinePosition = offset(document.querySelector("#tuyere"));
+  let blueLadderLineTop =
+    blueLadderLinePosition.top - 0.5 * blueLadderLinePosition.height;
+  let blueLadderLineLeft = blueLadderLinePosition.left;
+  blueLadderLine.style.cssText = `position: absolute; top: ${blueLadderLineTop}px; left: ${blueLadderLineLeft}px;`;
+};
+
+const grayEllipsePos = () => {
+  const grayEllipse = document.querySelector("#gray-ellipse");
+  const grayEllipsePosition = offset(document.querySelector("#pricing-title"));
+  let grayEllipseTop = grayEllipsePosition.top;
+  grayEllipse.style.cssText = `position: absolute; top: ${grayEllipseTop}px; right: 0;`;
+};
+
 function imgPositions() {
   imgFeaturesBlueEllipsePos();
   grayBackgroundPos();
@@ -90,6 +106,8 @@ function imgPositions() {
   whiteDecor2Pos();
   greyWavyLinesPos();
   blueEllipsePos();
+  blueLadderLinePos();
+  grayEllipsePos();
 }
 
 window.addEventListener("load", () => {

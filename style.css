@@ -290,7 +290,7 @@ ul {
 }
 
 .example-of-work-numbers {
-  max-width: 20%;
+  width: 30%;
 }
 
 .example-of-work-number {
@@ -299,7 +299,7 @@ ul {
 }
 
 .example-of-work-image {
-  margin-left: 100px;
+  margin-left: 5em;
 }
 
 #pricing-title {
