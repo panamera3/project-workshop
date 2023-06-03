@@ -72,7 +72,16 @@ const greyWavyLinesPos = () => {
   greyWavyLines.style.cssText = `position: absolute; top: ${greyWavyLinesTop}px; left: 0; height: 90%;`;
 };
 
-
+const blueEllipsePos = () => {
+  const blueEllipse = document.querySelector("#examples-of-work-blue-ellipse");
+  const blueEllipsePosition = offset(
+    document.querySelector(".examples-of-work")
+  );
+  let blueEllipseTop =
+    blueEllipsePosition.top -
+    (blueEllipse.height - blueEllipsePosition.height) / 2;
+  blueEllipse.style.cssText = `position: absolute; top: ${blueEllipseTop}px; left: -30%; height: 100%;`;
+};
 
 function imgPositions() {
   imgFeaturesBlueEllipsePos();
@@ -80,6 +89,7 @@ function imgPositions() {
   whiteDecor1Pos();
   whiteDecor2Pos();
   greyWavyLinesPos();
+  blueEllipsePos();
 }
 
 window.addEventListener("load", () => {
