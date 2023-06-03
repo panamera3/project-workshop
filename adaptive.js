@@ -99,8 +99,18 @@ const grayEllipsePos = () => {
   grayEllipse.style.cssText = `position: absolute; top: ${grayEllipseTop}px; right: 0;`;
 };
 
-const advantagesGrayEllipse = () => {}
-const advantagesBlueEllipse = () => {};
+const advantagesGrayEllipsePos = () => {
+    const advantagesGrayEllipse = document.querySelector("#advantages-gray-ellipse");
+    const advantagesGrayEllipsePosition = offset(document.querySelector("#advantages"));
+    let advantagesGrayEllipseTop = advantagesGrayEllipsePosition.top - advantagesGrayEllipsePosition.height*0.2;
+    advantagesGrayEllipse.style.cssText = `position: absolute; top: ${advantagesGrayEllipseTop}px; left: 0;`;
+};
+const advantagesBlueEllipsePos = () => {
+    const advantagesBlueEllipse = document.querySelector("#advantages-blue-ellipse");
+    const advantagesBlueEllipsePosition = offset(document.querySelector("#advantages"));
+    let advantagesBlueEllipseTop = advantagesBlueEllipsePosition.top - advantagesBlueEllipsePosition.height*0.2;
+    advantagesBlueEllipse.style.cssText = `position: absolute; top: ${advantagesBlueEllipseTop}px; right: 0;`;
+};
 
 function imgPositions() {
   imgFeaturesBlueEllipsePos();
@@ -111,7 +121,8 @@ function imgPositions() {
   blueEllipsePos();
   blueLadderLinePos();
   grayEllipsePos();
-  advantagesGrayEllipse();
+  advantagesGrayEllipsePos();
+  advantagesBlueEllipsePos();
 }
 
 window.addEventListener("load", () => {
