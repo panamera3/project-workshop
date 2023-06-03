@@ -187,6 +187,12 @@ ul {
   flex-basis: 70%;
 }
 
+.features-container {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
 .plus {
   margin-right: 1em;
   margin-left: auto;
@@ -201,6 +207,14 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.several-features:first-child {
+  margin-right: 5em;
+}
+
+.several-features:last-child {
+  margin-left: 5em;
 }
 
 .feature {
@@ -410,7 +424,7 @@ ul {
 
 .equipment-characteristics p {
   text-align: center;
-  color: #ADADAD;
+  color: #adadad;
 }
 
 #characteristics-inner li {
@@ -426,7 +440,7 @@ ul {
   transition: border-bottom 0.3s ease-in-out;
 }
 
-.active > p{
+.active > p {
   color: #ffffff;
 }
 

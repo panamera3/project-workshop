@@ -73,6 +73,18 @@
   .full-equipment {
     height: 25rem;
   }
+
+  .features-container{
+    flex-direction: column;
+  }
+
+  .several-features:first-child {
+    margin-right: 0;
+  }
+  
+  .several-features:last-child {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 1065px) {

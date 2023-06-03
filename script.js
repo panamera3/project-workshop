@@ -5,6 +5,7 @@ document.addEventListener("click", function (event) {
   );
   if (!featureDescription) return;
   featureDescription.classList.toggle("hidden");
+  window.dispatchEvent(new Event("resize"));
 });
 
 document.addEventListener("click", (event) => {
@@ -14,6 +15,7 @@ document.addEventListener("click", (event) => {
     ".feature-description"
   );
   featureDesc.classList.toggle("hidden");
+  window.dispatchEvent(new Event("resize"));
 });
 
 var descDiv = document.getElementById("description");
