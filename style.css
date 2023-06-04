@@ -199,6 +199,7 @@ nav{
   margin-right: 1em;
   margin-left: auto;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .about-feature {
@@ -415,6 +416,7 @@ nav{
 .equipment-characteristics {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .equipment-characteristics div {
