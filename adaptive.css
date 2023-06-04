@@ -13,6 +13,13 @@
     display: none;
   }
 
+  .navigation ul li {
+    margin-bottom: 0.5em;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
   .main-info > h1 {
     color: #ffffff;
   }
@@ -70,8 +77,12 @@
     height: 25rem;
   }
 
+  .equipment-name {
+    font-size: 28px;
+  }
+
   #equipment-inners p {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .example-of-work-image {
@@ -133,6 +144,24 @@
     max-width: 40%;
   }
 
+  .navigation ul {
+    flex-direction: column;
+  }
+
+  .navigation ul li {
+    margin-bottom: 0.5em;
+  }
+
+  .navigation ul a {
+    font-size: 20px;
+  }
+
+  .navigation ul a:hover {
+    transition: font-size 0.5s ease-in-out;
+    font-size: 25px;
+    border-bottom: 1px solid #ffffff;
+  }
+
   #technology-outer {
     display: none;
   }
@@ -169,7 +198,11 @@
   }
 
   .equipment-name {
-    font-size: 32px;
+    font-size: 30px;
+  }
+
+  #equipment-inners p {
+    font-size: 15px;
   }
 
   .reason {
@@ -186,4 +219,14 @@
 }
 
 @media screen and (max-width: 770px) {
+  .price-elements {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .price-element{
+    margin-bottom: 3em;
+  }
 }

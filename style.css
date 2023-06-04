@@ -53,10 +53,6 @@ ul {
   color: #383838;
 }
 
-.description:hover {
-  border-bottom: 1px solid #181818;
-}
-
 .description > p {
   color: #383838;
 }
@@ -103,6 +99,12 @@ nav {
   color: black;
   margin: 0 25px;
   font-size: 15px;
+}
+
+.navigation ul a:hover {
+  transition: font-size 0.5s ease-in-out;
+  font-size: 20px;
+  border-bottom: 1px solid #ffffff;
 }
 
 #logo2 {
