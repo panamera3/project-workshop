@@ -145,6 +145,14 @@ nav {
   width: 40%;
 }
 
+#white-decor1-phone{
+  display: none;
+}
+
+#white-decor2-phone{
+  display: none;
+}
+
 #header-main-image {
   margin-left: auto;
   display: block;

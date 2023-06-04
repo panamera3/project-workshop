@@ -3,6 +3,36 @@
     padding: 0.5em 0.5em;
   }
 
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  #gray-background {
+    display: none;
+  }
+
+  #white-decor1 {
+    display: none;
+  }
+
+  #white-decor2 {
+    display: none;
+  }
+
+  #white-decor1-phone {
+    display: block;
+    width: 15%;
+  }
+
+  #white-decor2-phone {
+    display: block;
+    width: 20%;
+  }
+
   .info {
     flex-direction: column;
   }
@@ -11,7 +41,7 @@
     width: 100%;
   }
 
-  #header-main-image{
+  #header-main-image {
     width: 40%;
     margin-right: auto;
     margin-bottom: 4em;
@@ -32,6 +62,26 @@
     text-decoration: none;
     padding: 20px 30px;
     text-align: center;
+  }
+  .features > p {
+    width: 95%;
+  }
+
+  .examples-of-work {
+    flex-direction: column;
+  }
+
+  .full-equipment {
+    flex-direction: column;
+  }
+
+  .features > ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .feature {
+    width: 100%;
   }
 
   .price-elements {
