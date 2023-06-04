@@ -13,7 +13,7 @@ function offset(el) {
   };
 }
 
-const imgFeaturesBlueEllipsePos = () => {
+const imgFeaturesBlueEllipsePosPhone = () => {
   const imgFeaturesBlueEllipse = document.querySelector(
     "#img-features-blue-ellipse"
   );
@@ -29,7 +29,7 @@ const imgFeaturesBlueEllipsePos = () => {
   imgFeaturesBlueEllipse.style.cssText = `width: 80%; position: absolute; top: ${imgFeaturesBlueEllipseTop}px; left: ${imgFeaturesBlueEllipseLeft}px;`;
 };
 
-const grayBackgroundPos = () => {
+const grayBackgroundPosPhone = () => {
   const grayBackground = document.querySelector("#gray-background");
   const positionGrayBackground = offset(
     document.querySelector(".full-equipment")
@@ -40,7 +40,7 @@ const grayBackgroundPos = () => {
   grayBackground.style.cssText = `position: absolute; top: ${grayBackgroundTop}px; right: 0; width: ${60}%;`;
 };
 
-const whiteDecor1Pos = () => {
+const whiteDecor1PosPhone = () => {
   const whiteDecor1 = document.querySelector("#white-decor1");
   const whiteDecor1Position = offset(
     document.querySelector("#header-main-image")
@@ -51,7 +51,7 @@ const whiteDecor1Pos = () => {
   whiteDecor1.style.cssText = `position: absolute; top: ${whiteDecor1Top}px; left: ${whiteDecor1Left}px;`;
 };
 
-const whiteDecor2Pos = () => {
+const whiteDecor2PosPhone = () => {
   const whiteDecor2 = document.querySelector("#white-decor2");
   const whiteDecor2Position = offset(
     document.querySelector("#header-main-image")
@@ -64,7 +64,7 @@ const whiteDecor2Pos = () => {
   whiteDecor2.style.cssText = `position: absolute; top: ${whiteDecor2Top}px; left: ${whiteDecor2Left}px;`;
 };
 
-const greyWavyLinesPos = () => {
+const greyWavyLinesPosPhone = () => {
   const greyWavyLines = document.querySelector("#grey-wavy-lines");
   const greyWavyLinesPosition = offset(
     document.querySelector(".examples-of-work")
@@ -75,7 +75,7 @@ const greyWavyLinesPos = () => {
   greyWavyLines.style.cssText = `position: absolute; top: ${greyWavyLinesTop}px; left: 0; height: 90%;`;
 };
 
-const blueEllipsePos = () => {
+const blueEllipsePosPhone = () => {
   const blueEllipse = document.querySelector("#examples-of-work-blue-ellipse");
   const blueEllipsePosition = offset(
     document.querySelector(".examples-of-work")
@@ -86,7 +86,7 @@ const blueEllipsePos = () => {
   blueEllipse.style.cssText = `width: 80%; position: absolute; top: ${blueEllipseTop}px; left: -30%; height: 100%;`;
 };
 
-const blueLadderLinePos = () => {
+const blueLadderLinePosPhone = () => {
   const blueLadderLine = document.querySelector("#blue-ladder-line");
   const blueLadderLinePosition = offset(document.querySelector("#tuyere"));
   let blueLadderLineTop =
@@ -95,14 +95,14 @@ const blueLadderLinePos = () => {
   blueLadderLine.style.cssText = `position: absolute; top: ${blueLadderLineTop}px; left: ${blueLadderLineLeft}px;`;
 };
 
-const grayEllipsePos = () => {
+const grayEllipsePosPhone = () => {
   const grayEllipse = document.querySelector("#gray-ellipse");
   const grayEllipsePosition = offset(document.querySelector("#pricing-title"));
   let grayEllipseTop = grayEllipsePosition.top;
   grayEllipse.style.cssText = `position: absolute; top: ${grayEllipseTop}px; right: 0;`;
 };
 
-const advantagesGrayEllipsePos = () => {
+const advantagesGrayEllipsePosPhone = () => {
   const advantagesGrayEllipse = document.querySelector(
     "#advantages-gray-ellipse"
   );
@@ -115,7 +115,7 @@ const advantagesGrayEllipsePos = () => {
   advantagesGrayEllipse.style.cssText = `position: absolute; top: ${advantagesGrayEllipseTop}px; left: 0;`;
 };
 
-const advantagesBlueEllipsePos = () => {
+const advantagesBlueEllipsePosPhone = () => {
   const advantagesBlueEllipse = document.querySelector(
     "#advantages-blue-ellipse"
   );
@@ -128,7 +128,7 @@ const advantagesBlueEllipsePos = () => {
   advantagesBlueEllipse.style.cssText = `position: absolute; top: ${advantagesBlueEllipseTop}px; right: 0;`;
 };
 
-const decorLinesPos = () => {
+const decorLinesPosPhone = () => {
   const decorLines = document.querySelector("#decor-lines");
   const decorLinesPositionTop = offset(document.querySelector("#application"));
   const decorLinesPositionLeft = offset(document.querySelector(".contacts"));
@@ -140,17 +140,17 @@ const decorLinesPos = () => {
 
 function imgPositionsPhones() {
   console.log(1);
-  imgFeaturesBlueEllipsePos();
-  grayBackgroundPos();
-  whiteDecor1Pos();
-  whiteDecor2Pos();
-  greyWavyLinesPos();
-  blueEllipsePos();
-  blueLadderLinePos();
-  grayEllipsePos();
-  advantagesGrayEllipsePos();
-  advantagesBlueEllipsePos();
-  decorLinesPos();
+  imgFeaturesBlueEllipsePosPhone();
+  grayBackgroundPosPhone();
+  whiteDecor1PosPhone();
+  whiteDecor2PosPhone();
+  greyWavyLinesPosPhone();
+  blueEllipsePosPhone();
+  blueLadderLinePosPhone();
+  grayEllipsePosPhone();
+  advantagesGrayEllipsePosPhone();
+  advantagesBlueEllipsePosPhone();
+  decorLinesPosPhone();
 }
 
 window.addEventListener("resize", () => {

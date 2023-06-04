@@ -2,7 +2,6 @@ function offset(el) {
   var rect = el.getBoundingClientRect();
   var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  console.log(rect);
   return {
     top: rect.top + scrollTop,
     bottom: rect.top + scrollTop + rect.height,
@@ -92,9 +91,6 @@ const blueLadderLinePos = () => {
   let blueLadderLineTop =
     blueLadderLinePosition.top - 0.5 * blueLadderLinePosition.height;
   let blueLadderLineLeft = blueLadderLinePosition.left;
-  console.log(document.documentElement.scrollWidth);
-  console.log(blueLadderLineLeft + blueLadderLine.width);
-  console.log(blueLadderLine.width);
   if (document.documentElement.scrollWidth > blueLadderLineLeft + blueLadderLine.width) {
     blueLadderLine.style.cssText = `position: absolute; top: ${blueLadderLineTop}px; left: ${blueLadderLineLeft}px;`;
   } else {
