@@ -17,12 +17,6 @@
       format("svg"); /* iOS 4.1- */
 }
 
-#exampleee {
-  background-image: url("images/header/logo2.png");
-  width: 10%;
-  height: 100%;
-}
-
 * {
   margin: 0;
   color: black;
@@ -59,7 +53,7 @@ ul {
   color: #383838;
 }
 
-.description:hover{
+.description:hover {
   border-bottom: 1px solid #181818;
 }
 
@@ -87,7 +81,7 @@ ul {
   }
 }
 
-nav{
+nav {
   max-width: 60%;
 }
 
@@ -257,6 +251,14 @@ nav{
   display: none;
 }
 
+#technology-inner {
+  display: none;
+}
+
+#technology-hr {
+  display: block;
+}
+
 #about-technology-title {
   background: url("images/about-technology/white-border-text.svg") no-repeat;
   padding: 30px;
@@ -278,6 +280,13 @@ nav{
 .about-technology-content > p {
   width: 40%;
 }
+
+.about-technology-content-text {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
 .about-technology-content-text > hr {
   margin: 1em 0;
 }

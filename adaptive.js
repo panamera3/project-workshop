@@ -92,7 +92,16 @@ const blueLadderLinePos = () => {
   let blueLadderLineTop =
     blueLadderLinePosition.top - 0.5 * blueLadderLinePosition.height;
   let blueLadderLineLeft = blueLadderLinePosition.left;
-  blueLadderLine.style.cssText = `position: absolute; top: ${blueLadderLineTop}px; left: ${blueLadderLineLeft}px;`;
+  console.log(document.documentElement.scrollWidth);
+  console.log(blueLadderLineLeft + blueLadderLine.width);
+  console.log(blueLadderLine.width);
+  if (document.documentElement.scrollWidth > blueLadderLineLeft + blueLadderLine.width) {
+    blueLadderLine.style.cssText = `position: absolute; top: ${blueLadderLineTop}px; left: ${blueLadderLineLeft}px;`;
+  } else {
+    let blueLadderLineTopSmall =
+      blueLadderLinePosition.top - 0.4 * blueLadderLinePosition.height;
+    blueLadderLine.style.cssText = `position: absolute; top: ${blueLadderLineTopSmall}px; right: 0;`;
+  }
 };
 
 const grayEllipsePos = () => {
