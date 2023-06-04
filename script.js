@@ -28,6 +28,7 @@ descDiv.addEventListener("click", () => {
   charDiv.classList.toggle("active");
   descParagInner.style.display = "inline";
   charParagInner.style.display = "none";
+  window.dispatchEvent(new Event("resize"));
 });
 
 charDiv.addEventListener("click", () => {
@@ -35,5 +36,6 @@ charDiv.addEventListener("click", () => {
   descDiv.classList.toggle("active");
   charParagInner.style.display = "inline";
   descParagInner.style.display = "none";
+  window.dispatchEvent(new Event("resize"));
 });
 

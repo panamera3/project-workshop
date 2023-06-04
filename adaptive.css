@@ -1,4 +1,14 @@
+@media screen and (max-width: 1800px) {
+  .feature {
+    width: 30em;
+  }
+}
+
 @media screen and (max-width: 1450px) {
+  body {
+    padding: 1em 2em;
+  }
+
   #img-white-background {
     display: none;
   }
@@ -15,11 +25,11 @@
     color: #ffffff;
   }
 
-  #logo{
+  #logo {
     display: none;
   }
 
-  #logo2{
+  #logo2 {
     display: inline;
   }
 
@@ -58,6 +68,14 @@
 
   .full-equipment {
     height: 25rem;
+  }
+
+  #equipment-inners p {
+    font-size: 15px;
+  }
+
+  .example-of-work-image {
+    margin-left: 2em;
   }
 
   .features-container {
@@ -99,6 +117,14 @@
 }
 
 @media screen and (max-width: 1065px) {
+  #white-decor1 {
+    display: none;
+  }
+
+  nav {
+    max-width: 40%;
+  }
+
   .example-of-work-image {
     margin-left: 0;
   }
@@ -116,12 +142,9 @@
     height: 15rem;
   }
 
-  nav{
-    max-width: 40%;
-  }
-
-  #white-decor1{
-    display: none;
+  .reason-inner {
+    margin-left: auto;
+    width: 80%;
   }
 }
 

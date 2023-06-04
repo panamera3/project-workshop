@@ -59,6 +59,10 @@ ul {
   color: #383838;
 }
 
+.description:hover{
+  border-bottom: 1px solid #181818;
+}
+
 .description > p {
   color: #383838;
 }
@@ -226,7 +230,7 @@ nav{
   padding-top: 20px;
   padding-bottom: 20px;
   align-items: center;
-  width: 25em;
+  width: 35em;
   justify-content: end;
   max-height: 200px;
 }
@@ -238,6 +242,7 @@ nav{
 
 .feature-name {
   display: flex;
+  margin-bottom: 0.5em;
 }
 
 .feature-name > h3 {
