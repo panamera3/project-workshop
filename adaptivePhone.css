@@ -1,0 +1,17 @@
+@media screen and (max-width: 770px) {
+    body {
+      padding: 0.5em 0.5em;
+    }
+  
+    .price-elements {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+    }
+  
+    .price-element{
+      margin-bottom: 3em;
+    }
+  }
+  
