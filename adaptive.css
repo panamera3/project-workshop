@@ -115,7 +115,7 @@
     padding: 0.5em 1em;
   }
 
-  footer{
+  footer {
     width: 50%;
   }
 }
@@ -172,8 +172,11 @@
     font-size: 32px;
   }
 
+  .reason {
+    width: 100%;
+  }
+
   .reason-inner {
-    margin-left: auto;
     width: 80%;
   }
 
