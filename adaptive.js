@@ -91,7 +91,10 @@ const blueLadderLinePos = () => {
   let blueLadderLineTop =
     blueLadderLinePosition.top - 0.5 * blueLadderLinePosition.height;
   let blueLadderLineLeft = blueLadderLinePosition.left;
-  if (document.documentElement.scrollWidth > blueLadderLineLeft + blueLadderLine.width) {
+  if (
+    document.documentElement.scrollWidth >
+    blueLadderLineLeft + blueLadderLine.width
+  ) {
     blueLadderLine.style.cssText = `position: absolute; top: ${blueLadderLineTop}px; left: ${blueLadderLineLeft}px;`;
   } else {
     let blueLadderLineTopSmall =
@@ -155,11 +158,17 @@ function imgPositions() {
   advantagesGrayEllipsePos();
   advantagesBlueEllipsePos();
   decorLinesPos();
+  const whiteDecor1Phone = document.querySelector("#white-decor1-phone");
+  const whiteDecor2Phone = document.querySelector("#white-decor2-phone");
+  whiteDecor1Phone.cssText = `display: none;`
+  whiteDecor2Phone.cssText = `display: none;`
 }
 
 window.addEventListener("load", () => {
-  imgPositions();
-  window.dispatchEvent(new Event("resize"));
+  if (window.innerWidth >= 770) {
+    imgPositions();
+    window.dispatchEvent(new Event("resize"));
+  }
 });
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 770) {
