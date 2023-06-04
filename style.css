@@ -478,21 +478,21 @@ nav {
 .reason {
   display: none;
   width: 80%;
-  height: 22em;
+  height: 20em;
 }
 
 .reason-inner {
   margin-left: auto;
-  width: 50%;
+  width: 70%;
 }
 
-.reason-inner > h3 {
+.reason-inner h3 {
   font-family: "Opinion Pro";
   font-style: normal;
   font-weight: 350;
   font-size: 50px;
   line-height: 70px;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 
 .reason-inner p {
@@ -511,6 +511,10 @@ nav {
 
 .warranties {
   display: flex;
+}
+
+.warranty {
+  flex: 1;
 }
 
 #customers-title {
