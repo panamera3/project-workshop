@@ -138,7 +138,8 @@ const decorLinesPos = () => {
   decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; right: ${decorLinesRight}px`;
 };
 
-function imgPositions() {
+function imgPositionsPhones() {
+  console.log(1);
   imgFeaturesBlueEllipsePos();
   grayBackgroundPos();
   whiteDecor1Pos();
@@ -152,12 +153,8 @@ function imgPositions() {
   decorLinesPos();
 }
 
-window.addEventListener("load", () => {
-  imgPositions();
-  window.dispatchEvent(new Event("resize"));
-});
 window.addEventListener("resize", () => {
-  if (window.innerWidth >= 770) {
-    imgPositions();
+  if (window.innerWidth < 770) {
+    imgPositionsPhones();
   }
 });
