@@ -7,7 +7,6 @@ function offset(el) {
     top: rect.top + scrollTop,
     bottom: rect.top + scrollTop + rect.height,
     left: rect.left + scrollLeft,
-    center: rect.left + (rect.right - rect.left) / 2,
     height: rect.height,
     width: rect.width,
   };
@@ -138,8 +137,21 @@ const decorLinesPosPhone = () => {
   decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; right: ${decorLinesRight}px`;
 };
 
+const imgBlueEllipsePosPhone = () => {
+  const imgBlueEllipsePosPhone = document.querySelector("#img-blue-ellipse");
+  const imgBlueEllipsePosPhonePosition = offset(
+    document.querySelector("#header-main-image")
+  );
+  let imgBlueEllipsePosPhonePositionTop =
+    imgBlueEllipsePosPhonePosition.top - imgBlueEllipsePosPhonePosition.height / 4;
+  let imgBlueEllipsePosPhonePositionLeft =
+    imgBlueEllipsePosPhonePosition.left - imgBlueEllipsePosPhonePosition.width / 2;
+  imgBlueEllipsePosPhone.style.cssText = `width: 90%; position: absolute; top: ${imgBlueEllipsePosPhonePositionTop}px; left: ${imgBlueEllipsePosPhonePositionLeft}px`;
+};
+
 function imgPositionsPhones() {
   console.log(1);
+  imgBlueEllipsePosPhone();
   imgFeaturesBlueEllipsePosPhone();
   grayBackgroundPosPhone();
   whiteDecor1PosPhone();

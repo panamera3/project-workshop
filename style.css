@@ -138,6 +138,24 @@ nav {
   width: 40%;
 }
 
+#img-blue-ellipse {
+  position: absolute;
+  top: 2%;
+  right: 0;
+  width: 40%;
+}
+
+#header-main-image {
+  margin-left: auto;
+  display: block;
+  margin-right: 10%;
+  width: 70%;
+}
+
+#more-details-outer {
+  display: none;
+}
+
 .mission {
   font-size: 30px;
   font-family: "Opinion Pro", sans-serif;
@@ -500,6 +518,12 @@ nav {
 .reason-inner p {
   font-size: 24px;
   margin-right: 10%;
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
 }
 
 .arrow {
