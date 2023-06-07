@@ -30,12 +30,8 @@ const imgFeaturesBlueEllipsePos = () => {
 
 const grayBackgroundPos = () => {
   const grayBackground = document.querySelector("#gray-background");
-  const positionGrayBackground = offset(
-    document.querySelector(".full-equipment")
-  );
-  let grayBackgroundTop =
-    positionGrayBackground.top -
-    (grayBackground.height - positionGrayBackground.height) / 2;
+  const positionGrayBackground = offset(document.querySelector(".equipment"));
+  let grayBackgroundTop = positionGrayBackground.top;
   grayBackground.style.cssText = `position: absolute; top: ${grayBackgroundTop}px; right: 0; width: ${60}%;`;
 };
 
@@ -160,8 +156,8 @@ function imgPositions() {
   decorLinesPos();
   const whiteDecor1Phone = document.querySelector("#white-decor1-phone");
   const whiteDecor2Phone = document.querySelector("#white-decor2-phone");
-  whiteDecor1Phone.cssText = `display: none;`
-  whiteDecor2Phone.cssText = `display: none;`
+  whiteDecor1Phone.cssText = `display: none;`;
+  whiteDecor2Phone.cssText = `display: none;`;
 }
 
 window.addEventListener("load", () => {

@@ -58,6 +58,10 @@ ul {
 }
 
 /*MAIN*/
+#gray-background2{
+  display: none;
+}
+
 .title-container {
   margin-bottom: 100px;
 }
@@ -124,7 +128,7 @@ nav {
 #application-btn:hover {
   border-width: 3px;
   transition: border-width 0.2s ease-in-out;
-  box-shadow: 0 0 5px white;
+  box-shadow: 0 0 5px #ffffff;
 }
 
 .info {
@@ -143,6 +147,18 @@ nav {
   top: 2%;
   right: 0;
   width: 40%;
+}
+
+#img-blue-ellipse2{
+  display: none;
+}
+
+#img-features-blue-ellipse{
+  display: block;
+}
+
+#img-features-blue-ellipse2{
+  display: none;
 }
 
 #white-decor1-phone{
@@ -428,21 +444,20 @@ nav {
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  height: 30rem;
+  height: 50rem;
 }
 
 .equipment {
   display: flex;
   flex-direction: column;
-  width: 45%;
 }
 
 .equipment h3 {
-  color: white;
+  color: #ffffff;
 }
 
 .equipment p {
-  color: white;
+  color: #000;
 }
 
 .equipment-name {

@@ -15,7 +15,7 @@ function offset(el) {
 
 const imgFeaturesBlueEllipsePosPhone = () => {
   const imgFeaturesBlueEllipse = document.querySelector(
-    "#img-features-blue-ellipse"
+    "#img-features-blue-ellipse2"
   );
   const positionImgFeaturesBlueEllipse = offset(
     document.querySelector("#position-img-features-blue-ellipse")
@@ -27,6 +27,17 @@ const imgFeaturesBlueEllipsePosPhone = () => {
     positionImgFeaturesBlueEllipse.left -
     imgFeaturesBlueEllipse.clientWidth / 4;
   imgFeaturesBlueEllipse.style.cssText = `width: 80%; position: absolute; top: ${imgFeaturesBlueEllipseTop}px; left: ${imgFeaturesBlueEllipseLeft}px;`;
+};
+
+const grayBackground2Pos = () => {
+  const grayBackground = document.querySelector("#gray-background2");
+  const positionGrayBackground = offset(
+    document.querySelector(".full-equipment")
+  );
+  let grayBackgroundTop =
+    positionGrayBackground.top -
+    (grayBackground.height - positionGrayBackground.height) / 2;
+  grayBackground.style.cssText = `display: block; position: absolute; top: ${grayBackgroundTop}px; right: 0; width: ${60}%;`;
 };
 
 const whiteDecor1PosPhone = () => {
@@ -104,34 +115,27 @@ const advantagesBlueEllipsePosPhone = () => {
 
 const decorLinesPosPhone = () => {
   const decorLines = document.querySelector("#decor-lines2");
-  const decorLinesPositionTop = offset(document.querySelector("#application"));
-  const decorLinesPositionLeft = offset(
-    document.querySelector(".full-application")
-  );
-  let decorLinesTop =
-    decorLinesPositionTop.bottom - decorLinesPositionTop.height * 0.3;
-  let decorLinesRight = decorLinesPositionLeft.left;
-  decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; left: ${decorLinesRight}px`;
+  const decorLinesPositionTop = offset(document.querySelector(".contacts"));
+  let decorLinesTop = decorLinesPositionTop.top;
+  decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; right: 5%`;
 };
 
 const imgBlueEllipsePosPhone = () => {
-  const imgBlueEllipsePosPhone = document.querySelector("#img-blue-ellipse");
+  const imgBlueEllipsePosPhone = document.querySelector("#img-blue-ellipse2");
   const imgBlueEllipsePosPhonePosition = offset(
     document.querySelector("#header-main-image")
   );
-  let imgBlueEllipsePosPhonePositionTop =
-    imgBlueEllipsePosPhonePosition.top -
-    imgBlueEllipsePosPhonePosition.height / 4;
-  let imgBlueEllipsePosPhonePositionLeft =
-    imgBlueEllipsePosPhonePosition.left -
-    imgBlueEllipsePosPhonePosition.width / 2;
-  imgBlueEllipsePosPhone.style.cssText = `width: 90%; position: absolute; top: ${imgBlueEllipsePosPhonePositionTop}px; left: ${imgBlueEllipsePosPhonePositionLeft}px`;
+  console.log(851274)
+  console.log(imgBlueEllipsePosPhonePosition);
+  let imgBlueEllipsePosPhonePositionTop = imgBlueEllipsePosPhonePosition.top;
+  imgBlueEllipsePosPhone.style.cssText = `width: 100%; position: absolute; top: ${imgBlueEllipsePosPhonePositionTop}px; left: 0`;
 };
 
 function imgPositionsPhones() {
   console.log(1);
   imgBlueEllipsePosPhone();
   imgFeaturesBlueEllipsePosPhone();
+  grayBackground2Pos();
   whiteDecor1PosPhone();
   whiteDecor2PosPhone();
   greyWavyLinesPosPhone();

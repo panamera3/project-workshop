@@ -34,6 +34,22 @@
     width: 20%;
   }
 
+  #img-blue-ellipse {
+    display: none;
+  }
+
+  #img-blue-ellipse2 {
+    display: block;
+  }
+
+  #img-features-blue-ellipse{
+    display: none;
+  }
+
+  #img-features-blue-ellipse2{
+    display: block;
+  }
+
   .info {
     flex-direction: column;
   }
@@ -115,6 +131,10 @@
     flex-direction: column;
   }
 
+  .full-application {
+    width: 95%;
+  }
+
   #decor-lines {
     display: none;
   }
@@ -122,5 +142,9 @@
   #decor-lines2 {
     display: block;
     width: 15%;
+  }
+
+  footer {
+    width: 100%;
   }
 }
