@@ -45,7 +45,8 @@ const whiteDecor2PosPhone = () => {
   const whiteDecor2Position = offset(
     document.querySelector("#header-main-image")
   );
-  let whiteDecor2Top = whiteDecor2Position.top + whiteDecor2Position.height * 0.8;
+  let whiteDecor2Top =
+    whiteDecor2Position.top + whiteDecor2Position.height * 0.8;
   let whiteDecor2Left = whiteDecor2Position.left - whiteDecor2.width * 1.1;
   whiteDecor2.style.cssText = `position: absolute; top: ${whiteDecor2Top}px; left: ${whiteDecor2Left}px;`;
 };
@@ -88,19 +89,6 @@ const grayEllipsePosPhone = () => {
   grayEllipse.style.cssText = `position: absolute; top: ${grayEllipseTop}px; right: 0;`;
 };
 
-const advantagesGrayEllipsePosPhone = () => {
-  const advantagesGrayEllipse = document.querySelector(
-    "#advantages-gray-ellipse"
-  );
-  const advantagesGrayEllipsePosition = offset(
-    document.querySelector("#advantages")
-  );
-  let advantagesGrayEllipseTop =
-    advantagesGrayEllipsePosition.top -
-    advantagesGrayEllipsePosition.height * 0.2;
-  advantagesGrayEllipse.style.cssText = `position: absolute; top: ${advantagesGrayEllipseTop}px; left: 0;`;
-};
-
 const advantagesBlueEllipsePosPhone = () => {
   const advantagesBlueEllipse = document.querySelector(
     "#advantages-blue-ellipse"
@@ -115,13 +103,15 @@ const advantagesBlueEllipsePosPhone = () => {
 };
 
 const decorLinesPosPhone = () => {
-  const decorLines = document.querySelector("#decor-lines");
+  const decorLines = document.querySelector("#decor-lines2");
   const decorLinesPositionTop = offset(document.querySelector("#application"));
-  const decorLinesPositionLeft = offset(document.querySelector(".contacts"));
+  const decorLinesPositionLeft = offset(
+    document.querySelector(".full-application")
+  );
   let decorLinesTop =
     decorLinesPositionTop.bottom - decorLinesPositionTop.height * 0.3;
-  let decorLinesRight = decorLinesPositionLeft.left - decorLines.width * 1.2;
-  decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; right: ${decorLinesRight}px`;
+  let decorLinesRight = decorLinesPositionLeft.left;
+  decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; left: ${decorLinesRight}px`;
 };
 
 const imgBlueEllipsePosPhone = () => {
@@ -148,7 +138,6 @@ function imgPositionsPhones() {
   blueEllipsePosPhone();
   blueLadderLinePosPhone();
   grayEllipsePosPhone();
-  advantagesGrayEllipsePosPhone();
   advantagesBlueEllipsePosPhone();
   decorLinesPosPhone();
 }

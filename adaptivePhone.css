@@ -1,6 +1,7 @@
 @media screen and (max-width: 770px) {
   body {
     padding: 0.5em 0.5em;
+    background: linear-gradient(#383838, #ffffff 35%) no-repeat;
   }
 
   h1 {
@@ -63,13 +64,21 @@
     padding: 20px 30px;
     text-align: center;
   }
-  
+
   .features > p {
     width: 95%;
   }
 
   .examples-of-work {
     flex-direction: column;
+  }
+
+  #examples-of-work-blue-ellipse {
+    display: none;
+  }
+
+  #grey-wavy-lines {
+    display: none;
   }
 
   .full-equipment {
@@ -94,5 +103,24 @@
 
   .price-element {
     margin-bottom: 3em;
+    width: 8em;
+    height: 8em;
+  }
+
+  #advantages-gray-ellipse {
+    display: none;
+  }
+
+  .communication {
+    flex-direction: column;
+  }
+
+  #decor-lines {
+    display: none;
+  }
+
+  #decor-lines2 {
+    display: block;
+    width: 15%;
   }
 }
