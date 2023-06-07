@@ -141,6 +141,7 @@ const decorLinesPos = () => {
   let decorLinesRight = decorLinesPositionLeft.left - decorLines.width * 1.2;
   decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; right: ${decorLinesRight}px`;
 };
+   
 
 function imgPositions() {
   imgFeaturesBlueEllipsePos();
@@ -166,6 +167,7 @@ window.addEventListener("load", () => {
     window.dispatchEvent(new Event("resize"));
   }
 });
+
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 770) {
     imgPositions();

@@ -46,10 +46,6 @@
     display: none;
   }
 
-  #img-features-blue-ellipse2{
-    display: block;
-  }
-
   .info {
     flex-direction: column;
   }
