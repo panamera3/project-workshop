@@ -85,7 +85,7 @@ ul {
   }
 }
 
-#menuBtn{
+#menuBtn {
   display: none;
 }
 
@@ -531,6 +531,10 @@ nav {
   display: inline;
 }
 
+.reasons-phones {
+  display: none;
+}
+
 .reason {
   display: none;
   width: 80%;
@@ -560,6 +564,10 @@ nav {
   display: flex;
   justify-content: center;
   margin-top: 5em;
+}
+
+.arrows-phones {
+  display: none;
 }
 
 .arrow {

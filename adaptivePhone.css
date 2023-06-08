@@ -46,11 +46,12 @@
     display: none;
   }
 
-  #menuBtn{
+  #menuBtn {
     display: block;
   }
 
-  .application-button, nav{
+  .application-button,
+  nav {
     display: none;
   }
 
@@ -112,11 +113,11 @@
     line-height: normal;
   }
 
-  #technology-hr{
+  #technology-hr {
     display: none;
   }
 
-  #technology-inner-container{
+  #technology-inner-container {
     width: 90%;
     height: 180%;
     object-fit: cover;
@@ -130,7 +131,7 @@
     display: none;
   }
 
-  .example-of-work{
+  .example-of-work {
     width: 100%;
   }
 
@@ -192,6 +193,20 @@
     display: none;
   }
 
+  .reasons {
+    display: none;
+  }
+
+  .reasons-phones {
+    display: block;
+  }
+
+  .reason-phones {
+    display: none;
+    width: 100%;
+    height: 25em;
+  }
+
   .reason-inner h3 {
     font-size: 30px;
     line-height: normal;
@@ -202,7 +217,22 @@
     width: 100%;
   }
 
-  .customers-logos > img{
+  .active-reason-phone {
+    display: block;
+    animation: fadeImg 0.8s;
+  }
+
+  .arrows-phones {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+  }
+
+  .arrows {
+    display: none;
+  }
+
+  .customers-logos > img {
     width: 50%;
   }
 
