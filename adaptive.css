@@ -140,6 +140,10 @@
     width: 20%;
   }
 
+  #gray-background2{
+    display: none;
+  }
+
   nav {
     max-width: 40%;
   }

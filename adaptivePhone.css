@@ -46,8 +46,17 @@
     display: none;
   }
 
+  #menuBtn{
+    display: block;
+  }
+
   .application-button, nav{
     display: none;
+  }
+
+  .navigation {
+    margin-bottom: 50px;
+    justify-content: space-between;
   }
 
   .navigation ul a {
@@ -85,6 +94,10 @@
     text-align: center;
   }
 
+  .mission {
+    font-size: 20px;
+  }
+
   .feature-name > h3 {
     font-size: 14px;
   }
@@ -95,6 +108,18 @@
 
   .features > p {
     width: 95%;
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  #technology-hr{
+    display: none;
+  }
+
+  #technology-inner-container{
+    width: 90%;
+    height: 180%;
+    object-fit: cover;
   }
 
   #tuyere-inner {
@@ -143,7 +168,7 @@
   }
 
   #blue-ladder-line {
-    width: 95%;
+    width: 80%;
   }
 
   .price-elements {
@@ -154,17 +179,27 @@
   }
 
   .price-element {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     width: 8em;
     height: 8em;
   }
 
   .price-element p {
-    font-size: 22px;
+    font-size: 1.2em;
   }
 
   #advantages-gray-ellipse {
     display: none;
+  }
+
+  .reason-inner h3 {
+    font-size: 30px;
+    line-height: normal;
+  }
+
+  .reason-inner {
+    margin-left: auto;
+    width: 100%;
   }
 
   .customers-logos > img{
