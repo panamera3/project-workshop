@@ -25,7 +25,7 @@ const imgFeaturesBlueEllipsePos = () => {
   let imgFeaturesBlueEllipseLeft =
     positionImgFeaturesBlueEllipse.left -
     imgFeaturesBlueEllipse.clientWidth / 4;
-  imgFeaturesBlueEllipse.style.cssText = `width: 80%; position: absolute; top: ${imgFeaturesBlueEllipseTop}px; left: ${imgFeaturesBlueEllipseLeft}px;`;
+  imgFeaturesBlueEllipse.style.cssText = `width: 40%; position: absolute; top: ${imgFeaturesBlueEllipseTop}px; left: ${imgFeaturesBlueEllipseLeft}px;`;
 };
 
 const grayBackgroundPos = () => {
