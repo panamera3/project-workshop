@@ -50,6 +50,10 @@
     display: block;
   }
 
+  .main-article {
+    margin-bottom: 70px;
+  }
+
   .application-button,
   nav {
     display: none;
@@ -150,9 +154,9 @@
   #grey-wavy-lines {
     display: none;
   }
-
   .full-equipment {
     flex-direction: column;
+    height: auto;
   }
 
   .features > ul {
@@ -250,7 +254,7 @@
 
   #decor-lines2 {
     display: block;
-    width: 15%;
+    width: 50%;
   }
 
   footer {

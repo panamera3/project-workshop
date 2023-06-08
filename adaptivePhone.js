@@ -114,7 +114,7 @@ const decorLinesPosPhone = () => {
   const decorLines = document.querySelector("#decor-lines2");
   const decorLinesPositionTop = offset(document.querySelector(".contacts"));
   let decorLinesTop = decorLinesPositionTop.top;
-  decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; right: 5%`;
+  decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; right: 1%`;
 };
 
 const imgBlueEllipsePosPhone = () => {
