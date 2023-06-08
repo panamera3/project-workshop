@@ -250,7 +250,6 @@ nav {
   margin-right: 1em;
   margin-left: auto;
   font-size: 25px;
-  cursor: pointer;
 }
 
 .about-feature {
@@ -279,7 +278,6 @@ nav {
   align-items: center;
   width: 35em;
   justify-content: end;
-  max-height: 200px;
 }
 
 .feature > img {
@@ -290,6 +288,7 @@ nav {
 .feature-name {
   display: flex;
   margin-bottom: 0.5em;
+  cursor: pointer;
 }
 
 .feature-name > h3 {
