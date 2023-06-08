@@ -46,6 +46,14 @@
     display: none;
   }
 
+  .application-button, nav{
+    display: none;
+  }
+
+  .navigation ul a {
+    color: #000;
+  }
+
   .info {
     flex-direction: column;
   }
