@@ -5,7 +5,7 @@
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   h2 {
@@ -42,7 +42,7 @@
     display: block;
   }
 
-  #img-features-blue-ellipse{
+  #img-features-blue-ellipse {
     display: none;
   }
 
@@ -77,8 +77,32 @@
     text-align: center;
   }
 
+  .feature-name > h3 {
+    font-size: 14px;
+  }
+
+  .feature > img {
+    padding-right: 0.5em;
+  }
+
   .features > p {
     width: 95%;
+  }
+
+  #tuyere-inner {
+    display: block;
+  }
+
+  #tuyere {
+    display: none;
+  }
+
+  .example-of-work{
+    width: 100%;
+  }
+
+  .example-of-work > p {
+    border-bottom: none;
   }
 
   .examples-of-work {
@@ -106,6 +130,14 @@
     width: 100%;
   }
 
+  #tuyere {
+    width: 95%;
+  }
+
+  #blue-ladder-line {
+    width: 95%;
+  }
+
   .price-elements {
     display: flex;
     flex-direction: column;
@@ -119,8 +151,16 @@
     height: 8em;
   }
 
+  .price-element p {
+    font-size: 22px;
+  }
+
   #advantages-gray-ellipse {
     display: none;
+  }
+
+  .customers-logos > img{
+    width: 50%;
   }
 
   .communication {

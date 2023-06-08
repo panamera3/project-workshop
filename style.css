@@ -58,7 +58,11 @@ ul {
 }
 
 /*MAIN*/
-#gray-background2{
+.modal {
+  display: none;
+}
+
+#gray-background2 {
   display: none;
 }
 
@@ -149,23 +153,23 @@ nav {
   width: 40%;
 }
 
-#img-blue-ellipse2{
+#img-blue-ellipse2 {
   display: none;
 }
 
-#img-features-blue-ellipse{
+#img-features-blue-ellipse {
   display: block;
 }
 
-#img-features-blue-ellipse2{
+#img-features-blue-ellipse2 {
   display: none;
 }
 
-#white-decor1-phone{
+#white-decor1-phone {
   display: none;
 }
 
-#white-decor2-phone{
+#white-decor2-phone {
   display: none;
 }
 
@@ -333,6 +337,10 @@ nav {
 
 .about-technology-content-text > hr {
   margin: 1em 0;
+}
+
+#tuyere-inner {
+  display: none;
 }
 
 .examples-of-work {

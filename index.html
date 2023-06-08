@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="adaptive.css" />
     <link rel="stylesheet" href="adaptivePhone.css" />
+    <link rel="stylesheet" href="modal.css" />
     <title>Thermal Spray</title>
 </head>
 
@@ -46,6 +47,35 @@
                     </nav>
                     <div class="application-button">
                         <a href="#application" id="application-btn">Оставить заявку</a>
+                    </div>
+
+                    <a href="#openModal" class="openModalWindow">Открыть модальное окно</a>
+                    <div id="openModal" class="modal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title">Название</h3>
+                                    <a href="#close" title="Close" class="close">×</a>
+                                </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li class="description">
+                                            <a href="#about-technology">Технология</a>
+                                        </li>
+                                        <li class="description">
+                                            <a href="#features">Виды услуг</a>
+                                        </li>
+                                        <li class="description">
+                                            <a href="#equipments">Оборудование</a>
+                                        </li>
+                                        <li class="description">
+                                            <a href="#advantages">Преимущества</a>
+                                        </li>
+                                    </ul>
+                                    <a href="#application" id="application-btn">Оставить заявку</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="info">
@@ -163,6 +193,7 @@
                 <div class="example-of-work">
                     <p>Одним из примеров нашей работы является усовершенствование фурмы - приспособления для вдувания
                         газа в металлургическую печь или ковш</p>
+                    <img src="images/examples-of-work/tuyere.png" id="tuyere-inner" />
                     <div class="example-of-work-advantages">
                         <div class="example-of-work-numbers">
                             <p class="example-of-work-number">6</p>
@@ -392,5 +423,6 @@
 <script src="slider.js"></script>
 <script src="adaptive.js"></script>
 <script src="adaptivePhone.js"></script>
+<script src="modal.js"></script>
 
 </html>

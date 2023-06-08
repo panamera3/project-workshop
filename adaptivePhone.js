@@ -83,7 +83,7 @@ const blueEllipsePosPhone = () => {
 
 const blueLadderLinePosPhone = () => {
   const blueLadderLine = document.querySelector("#blue-ladder-line");
-  const blueLadderLinePosition = offset(document.querySelector("#tuyere"));
+  const blueLadderLinePosition = offset(document.querySelector("#tuyere-inner"));
   let blueLadderLineTop =
     blueLadderLinePosition.top - 0.5 * blueLadderLinePosition.height;
   let blueLadderLineLeft = blueLadderLinePosition.left;
