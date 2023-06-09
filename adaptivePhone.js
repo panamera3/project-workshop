@@ -2,7 +2,6 @@ function offset(el) {
   var rect = el.getBoundingClientRect();
   var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  console.log(rect);
   return {
     top: rect.top + scrollTop,
     bottom: rect.top + scrollTop + rect.height,
@@ -27,9 +26,7 @@ const imgFeaturesBlueEllipsePosPhone = () => {
 
 const grayBackground2Pos = () => {
   const grayBackground = document.querySelector("#gray-background2");
-  const positionGrayBackground = offset(
-    document.querySelector(".equipment")
-  );
+  const positionGrayBackground = offset(document.querySelector(".equipment"));
   let grayBackgroundTop =
     positionGrayBackground.top -
     (grayBackground.height - positionGrayBackground.height) / 2;
@@ -43,7 +40,7 @@ const whiteDecor1PosPhone = () => {
   );
   let whiteDecor1Top =
     whiteDecor1Position.top + 0.1 * whiteDecor1Position.height;
-  let whiteDecor1Left = whiteDecor1Position.left - 1.2* whiteDecor1.width;
+  let whiteDecor1Left = whiteDecor1Position.left - 1.2 * whiteDecor1.width;
   whiteDecor1.style.cssText = `display: block; position: absolute; top: ${whiteDecor1Top}px; right: ${whiteDecor1Left}px;`;
 };
 
@@ -81,14 +78,14 @@ const blueEllipsePosPhone = () => {
 };
 
 const blueLadderLinePosPhone = () => {
-  console.log(121367)
   const blueLadderLine = document.querySelector("#blue-ladder-line");
   const blueLadderLinePosition = offset(
     document.querySelector("#tuyere-inner")
   );
   let blueLadderLineTop =
-    blueLadderLinePosition.top - 0.5 * blueLadderLinePosition.height;
-  let blueLadderLineRight = blueLadderLinePosition.left ;
+    blueLadderLinePosition.top - 0.4 * blueLadderLinePosition.height;
+  let blueLadderLineRight =
+    blueLadderLinePosition.left - blueLadderLine.width * 0.2;
   blueLadderLine.style.cssText = `position: absolute; top: ${blueLadderLineTop}px; right: ${blueLadderLineRight}px;`;
 };
 
@@ -112,29 +109,26 @@ const advantagesBlueEllipsePosPhone = () => {
   advantagesBlueEllipse.style.cssText = `position: absolute; top: ${advantagesBlueEllipseTop}px; right: 0;`;
 };
 
-const decorLinesPosPhone = () => {
-  const decorLines = document.querySelector("#decor-lines2");
-  const decorLinesPositionTop = offset(document.querySelector(".contacts"));
-  let decorLinesTop = decorLinesPositionTop.top;
-  decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; right: 1%`;
-};
-
 const imgBlueEllipsePosPhone = () => {
   const imgBlueEllipsePosPhone = document.querySelector("#img-blue-ellipse2");
   const imgBlueEllipsePosPhonePosition = offset(
     document.querySelector("#header-main-image")
   );
-  console.log(851274);
-  console.log(imgBlueEllipsePosPhonePosition);
   let imgBlueEllipsePosPhonePositionTop = imgBlueEllipsePosPhonePosition.top;
   imgBlueEllipsePosPhone.style.cssText = `width: 100%; position: absolute; top: ${imgBlueEllipsePosPhonePositionTop}px; left: 0`;
 };
 
+const decorLinesPosPhone = () => {
+  const decorLines = document.querySelector("#decor-lines2");
+  const decorLinesPosition = offset(document.querySelector(".contacts"));
+  let decorLinesTop = decorLinesPosition.top;
+  decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; right: 1%`;
+};
+
 function imgPositionsPhones() {
-  console.log(1);
   imgBlueEllipsePosPhone();
   imgFeaturesBlueEllipsePosPhone();
-  grayBackground2Pos();
+  grayBackground3Pos();
   whiteDecor1PosPhone();
   whiteDecor2PosPhone();
   greyWavyLinesPosPhone();
@@ -151,6 +145,7 @@ window.addEventListener("load", () => {
     window.dispatchEvent(new Event("resize"));
   }
 });
+
 window.addEventListener("resize", () => {
   if (window.innerWidth < 770) {
     imgPositionsPhones();

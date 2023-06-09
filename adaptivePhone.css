@@ -237,7 +237,7 @@
   }
 
   #blue-ladder-line {
-    width: 50%;
+    width: 65%;
   }
 
   .price-elements {
@@ -323,6 +323,10 @@
 
   footer {
     width: 100%;
+  }
+
+  .contacts {
+    line-height: 300%;
   }
 }
 

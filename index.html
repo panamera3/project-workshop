@@ -26,6 +26,7 @@
         <img src="images/features/blue-ellipse2.svg" id="img-features-blue-ellipse2" />
         <img src="images/equipment/gray-background.svg" id="gray-background" />
         <img src="images/equipment/gray-background2.svg" id="gray-background2" />
+        <img src="images/equipment/gray-background3.svg" id="gray-background3" />
         <main>
             <article class="main-article title">
                 <div class="navigation">
@@ -54,7 +55,13 @@
                     <img src="images/header/menu.svg" id="menuBtn" />
                     <div id="myModal" class="modal">
                         <div class="modal-content">
-                            <span class="close">&times;</span>
+                            <img src="images/modal/gray-circle.svg" id="modal-gray-circle"
+                                style="position: absolute; top:0; left: 0;" />
+                            <img src="images/modal/blue-circle.svg" id="modal-blue-circle"
+                                style="position: absolute; bottom:0; right: 0;" />
+                            <div style="width: 100%;">
+                                <img src="images/modal/close-button.svg" class="close" />
+                            </div>
                             <ul>
                                 <li class="description">
                                     <a href="#about-technology">Технология</a>
@@ -69,7 +76,9 @@
                                     <a href="#advantages">Преимущества</a>
                                 </li>
                             </ul>
-                            <a href="#application" id="application-btn">Оставить заявку</a>
+                            <div id="modal-application-btn">
+                                <a href="#application">Оставить заявку</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -234,7 +243,7 @@
                     <h2 id="equipments-title">Оборудование</h2>
                 </div>
                 <div class="full-equipment">
-                    <img src="images/equipment/plazm.png" id="plazm" width="500em" style="max-width: 100%;"/>
+                    <img src="images/equipment/plazm.png" id="plazm" width="500em" style="max-width: 100%;" />
                     <div class="equipment">
                         <h3 class="equipment-name">Плазмотрон PD-25</h3>
                         <div class="equipment-description">

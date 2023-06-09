@@ -150,6 +150,10 @@
 }
 
 @media screen and (max-width: 1065px) {
+  .modal {
+    display: none;
+  }
+  
   #white-decor1 {
     display: none;
   }
@@ -163,7 +167,7 @@
   }
 
   nav {
-    max-width: 40%;
+    width: 50%;
   }
 
   .navigation ul {

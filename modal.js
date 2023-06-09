@@ -1,8 +1,5 @@
-// Получить модальный
-var modal = document.getElementById("myModal");
-
-// Получить кнопку, которая открывает модальный
-var btn = document.getElementById("menuBtn");
+var modal = document.querySelector("#myModal");
+var btn = document.querySelector("#menuBtn");
 // Когда пользователь нажимает на кнопку, откройте модальный
 btn.onclick = () => {
   modal.style.display = "block";
@@ -10,14 +7,25 @@ btn.onclick = () => {
   document.documentElement.style.overflow = "hidden";
 };
 
-// Получить элемент <span>, который закрывает модальный
-var span = document.getElementsByClassName("close")[0];
-// Когда пользователь нажимает на <span> (x), закройте модальное окно
-span.onclick = () => {
-  modal.style.display = "none"; 
+var closeImg = document.querySelector(".close");
+// Когда пользователь нажимает на X, закройте модальное окно
+closeImg.onclick = () => {
+  modal.style.display = "none";
   document.body.style.overflow = "";
   document.documentElement.style.overflow = "";
 };
+
+// когда пользователь нажимает на ссылку
+var titleButton = document.querySelectorAll(".modal a");
+titleButton.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    event.preventDefault();
+    modal.style.display = "none";
+    document.body.style.overflow = "";
+    document.documentElement.style.overflow = "";
+    window.location.href = event.target.href; // переход по ссылке
+  });
+});
 
 // Когда пользователь щелкает в любом месте за пределами модального, закройте его
 window.onclick = (event) => {

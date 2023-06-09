@@ -145,6 +145,14 @@ const decorLinesPos = () => {
 };
 
 function imgPositions() {
+  const whiteDecor1Phone = document.querySelector("#white-decor1-phone");
+  const whiteDecor2Phone = document.querySelector("#white-decor2-phone");
+  const grayBackground2 = document.querySelector("#gray-background2");
+  const decorLines2 = document.querySelector("#decor-lines2");
+  whiteDecor1Phone.cssText = `display: none;`;
+  whiteDecor2Phone.cssText = `display: none;`;
+  grayBackground2.cssText = `display: none;`;
+  decorLines2.cssText = `display: none;`;
   imgFeaturesBlueEllipsePos();
   grayBackgroundPos();
   whiteDecor1Pos();
@@ -156,12 +164,6 @@ function imgPositions() {
   advantagesGrayEllipsePos();
   advantagesBlueEllipsePos();
   decorLinesPos();
-  const whiteDecor1Phone = document.querySelector("#white-decor1-phone");
-  const whiteDecor2Phone = document.querySelector("#white-decor2-phone");
-  const grayBackground2 = document.querySelector("#gray-background2");
-  whiteDecor1Phone.cssText = `display: none;`;
-  whiteDecor2Phone.cssText = `display: none;`;
-  grayBackground2.cssText = `display: none;`;
 }
 
 window.addEventListener("load", () => {

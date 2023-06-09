@@ -5,7 +5,6 @@ const previousItemPhones = document.querySelector(".previous-phones");
 let countPhones = 0;
 
 function shownextItemPhones() {
-  console.log(123);
   itemsPhones[countPhones].classList.remove("active-reason-phone");
   if (countPhones < itemPhonesCount - 1) {
     countPhones++;
@@ -16,7 +15,6 @@ function shownextItemPhones() {
 }
 
 function showpreviousItemPhones() {
-  console.log(12);
   itemsPhones[countPhones].classList.remove("active-reason-phone");
   if (countPhones > 0) {
     countPhones--;

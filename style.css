@@ -47,6 +47,7 @@ h2 {
 
 ul {
   list-style: none;
+  padding-inline-start: 0px;
 }
 
 .description {
@@ -150,11 +151,11 @@ nav {
   width: 40%;
 }
 
-#img-white-background{
+#img-white-background {
   display: block;
 }
 
-#img-white-background2{
+#img-white-background2 {
   display: none;
 }
 
