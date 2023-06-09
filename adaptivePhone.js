@@ -43,8 +43,8 @@ const whiteDecor1PosPhone = () => {
   );
   let whiteDecor1Top =
     whiteDecor1Position.top + 0.1 * whiteDecor1Position.height;
-  let whiteDecor1Left = whiteDecor1Position.right + 0.5 * whiteDecor1.width;
-  whiteDecor1.style.cssText = `display: block; position: absolute; top: ${whiteDecor1Top}px; left: ${whiteDecor1Left}px;`;
+  let whiteDecor1Left = whiteDecor1Position.left - 1.2* whiteDecor1.width;
+  whiteDecor1.style.cssText = `display: block; position: absolute; top: ${whiteDecor1Top}px; right: ${whiteDecor1Left}px;`;
 };
 
 const whiteDecor2PosPhone = () => {
