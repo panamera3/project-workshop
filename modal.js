@@ -7,7 +7,7 @@ btn.onclick = () => {
   document.documentElement.style.overflow = "hidden";
 };
 
-var closeImg = document.querySelector(".close");
+var closeImg = document.querySelector("#close");
 // Когда пользователь нажимает на X, закройте модальное окно
 closeImg.onclick = () => {
   modal.style.display = "none";
