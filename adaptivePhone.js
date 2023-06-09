@@ -120,8 +120,10 @@ const imgBlueEllipsePosPhone = () => {
 
 const decorLinesPosPhone = () => {
   const decorLines = document.querySelector("#decor-lines2");
-  const decorLinesPosition = offset(document.querySelector("#footer-description"));
-  let decorLinesTop = decorLinesPosition.top - decorLinesPosition.height * 2;
+  const decorLinesPosition = offset(
+    document.querySelector("#footer-description")
+  );
+  let decorLinesTop = decorLinesPosition.bottom - decorLines.height * 0.8;
   decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; right: 1%`;
 };
 

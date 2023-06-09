@@ -328,6 +328,10 @@
   .contacts {
     line-height: 300%;
   }
+
+  footer {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -346,6 +350,6 @@
   }
 
   #tuyere-inner {
-    margin-top: 1em;
+    margin-top: 4em;
   }
 }
