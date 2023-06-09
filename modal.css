@@ -75,3 +75,9 @@
     padding-top: 4em;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .modal-content ul {
+    padding-top: 0;
+  }
+}
