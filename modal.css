@@ -37,9 +37,10 @@
   font-size: 30px;
 }
 
-#modal-close{
-display: flex;
-justify-content: end;
+#modal-close {
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 
 #close {
