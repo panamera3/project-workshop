@@ -128,7 +128,7 @@ const decorLinesPosPhone = () => {
 function imgPositionsPhones() {
   imgBlueEllipsePosPhone();
   imgFeaturesBlueEllipsePosPhone();
-  grayBackground3Pos();
+  grayBackground2Pos();
   whiteDecor1PosPhone();
   whiteDecor2PosPhone();
   greyWavyLinesPosPhone();
