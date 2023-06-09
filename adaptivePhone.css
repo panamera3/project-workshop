@@ -209,7 +209,7 @@
   }
 
   .equipments {
-    margin-bottom: 10em;
+    margin-bottom: 15em;
   }
 
   .equipment {
@@ -334,6 +334,12 @@
 
   footer {
     width: 60%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .equipments {
+    margin-bottom: 10em;
   }
 }
 

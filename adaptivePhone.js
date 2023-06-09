@@ -41,10 +41,16 @@ const grayBackground2Pos = () => {
 const grayBackground3Pos = () => {
   const grayBackground = document.querySelector("#gray-background3");
   const positionGrayBackground = offset(document.querySelector(".equipment"));
-  let grayBackgroundTop =
-    positionGrayBackground.top -
-    (grayBackground.height - positionGrayBackground.height) / 2;
-  grayBackground.style.cssText = `width: 120%; display: block; position: absolute; top: ${grayBackgroundTop}px; left: -10%`;
+  let grayBackgroundTop;
+  if (grayBackground.height > 309) {
+    grayBackgroundTop =
+      positionGrayBackground.top -
+      (grayBackground.height - positionGrayBackground.height) / 2;
+  } else {
+    grayBackgroundTop =
+      positionGrayBackground.top - (grayBackground.height * 1.5) / 2;
+  }
+  grayBackground.style.cssText = `width: 100%; display: block; position: absolute; top: ${grayBackgroundTop}px; left: 0`;
 };
 
 const whiteDecor1PosPhone = () => {
