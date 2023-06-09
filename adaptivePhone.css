@@ -154,6 +154,8 @@
 
   #tuyere-inner {
     display: block;
+    width: 60%;
+    margin-top: 8em;
   }
 
   #tuyere {
@@ -172,21 +174,22 @@
     flex-direction: column;
   }
 
-  .example-of-work-numbers{
+  .example-of-work-numbers {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .example-of-work-number {
     font-size: 30px;
   }
 
-  .example-of-work-numbers > .description{
-    font-size: 14px;
+  .example-of-work-numbers > .description {
+    font-size: 18px;
   }
 
-  .example-of-work-numbers > p{
+  .example-of-work-numbers > p {
     text-align: center;
   }
 
@@ -197,9 +200,27 @@
   #grey-wavy-lines {
     display: none;
   }
+
+  #plazm {
+    margin-bottom: 7em;
+  }
+
+  .equipments {
+    margin-bottom: 10em;
+  }
+
+  .equipment {
+    width: 100%;
+  }
+
   .full-equipment {
     flex-direction: column;
     height: auto;
+  }
+
+  .equipment-characteristics div {
+    margin-top: 5%;
+    margin-bottom: 1%;
   }
 
   .features > ul {
@@ -306,9 +327,17 @@
 }
 
 @media screen and (max-width: 500px) {
+  /* менять gray background 2, когда ширина меньше 500 норм, когда между 500 и 770 слишком высокая */
+
   .reason-phones {
     height: 25em;
   }
 
-  /* менять gray background 2 */
+  .example-of-work-number {
+    font-size: 30px;
+  }
+
+  .example-of-work-numbers > .description {
+    font-size: 14px;
+  }
 }
