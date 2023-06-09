@@ -50,6 +50,10 @@ ul {
   padding-inline-start: 0px;
 }
 
+img {
+  z-index: 0;
+}
+
 .description {
   color: #383838;
 }
