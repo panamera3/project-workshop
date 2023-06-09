@@ -18,8 +18,8 @@
     <div class="container">
         <img src="images/header/white-background.svg" id="img-white-background"
             style="position: absolute; top: 0; left: 0; width: 65%;" />
-            <img src="images/header/white-background2.svg" id="img-white-background2"
-                style="position: absolute; top: 0; left: 0; width: 65%;" />
+        <img src="images/header/white-background2.svg" id="img-white-background2"
+            style="position: absolute; top: 0; left: 0; width: 65%;" />
         <img src="images/blue-ellipse.svg" id="img-blue-ellipse" />
         <img src="images/blue-ellipse2.svg" id="img-blue-ellipse2" />
         <img src="images/features/blue-ellipse.svg" id="img-features-blue-ellipse" />
@@ -422,26 +422,26 @@
                 <div class="full-application">
                     <div class="application" id="application">
                         <h3>Оставьте заявку для связи с вами</h3>
-                        <form action="mailto:plasmadynamics@yandex.ru">
+                        <form action="mail.php" method="POST">
                             <div class="form-item">
-                                <label for="email">Имя</label>
-                                <input type="email" id="email" name="email" style="border: 0; ">
+                                <label>Имя<input type="text" id="text" name="user_name" placeholder="Иван"
+                                        style="border: 0; " required></input></label>
                             </div>
                             <div class="form-item">
-                                <label for="email">Телефон</label>
-                                <input type="email" id="email" name="email" style="border: 0; ">
+                                <label>Телефон<input type="tel" id="tel" name="user_phone" placeholder="+7XXXXXXXXXX"
+                                        style="border: 0; padding: 1 " required></input></label>
                             </div>
                             <div class="form-item">
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" name="email" style="border: 0; ">
+                                <label for="email">E-mail<input type="email" id="email" name="email"
+                                        placeholder="example@mail.ru" style="border: 0; " required></input></label>
                             </div>
-                            <button style="
+                            <button type="submit" style="
                         color: #ffffff;
                         background-color: #383838;
                         padding: 19px 115px;
                         border-radius: 50px;
                         text-decoration: none;
-                        margin-top: 40px;" onclick="sendEmail()">Отправить</button>
+                        margin-top: 40px;">Отправить</button>
                         </form>
                     </div>
                 </div>
