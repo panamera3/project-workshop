@@ -31,7 +31,9 @@ const imgFeaturesBlueEllipsePos = () => {
 const grayBackgroundPos = () => {
   const grayBackground = document.querySelector("#gray-background");
   const positionGrayBackground = offset(document.querySelector(".equipment"));
-  let grayBackgroundTop = positionGrayBackground.top;
+  let grayBackgroundTop =
+    positionGrayBackground.top -
+    (grayBackground.height - positionGrayBackground.height) / 2;
   grayBackground.style.cssText = `position: absolute; top: ${grayBackgroundTop}px; right: 0; width: ${60}%;`;
 };
 
@@ -141,7 +143,6 @@ const decorLinesPos = () => {
   let decorLinesRight = decorLinesPositionLeft.left - decorLines.width * 1.2;
   decorLines.style.cssText = `position: absolute; top: ${decorLinesTop}px; right: ${decorLinesRight}px`;
 };
-   
 
 function imgPositions() {
   imgFeaturesBlueEllipsePos();
@@ -157,8 +158,10 @@ function imgPositions() {
   decorLinesPos();
   const whiteDecor1Phone = document.querySelector("#white-decor1-phone");
   const whiteDecor2Phone = document.querySelector("#white-decor2-phone");
+  const grayBackground2 = document.querySelector("#gray-background2");
   whiteDecor1Phone.cssText = `display: none;`;
   whiteDecor2Phone.cssText = `display: none;`;
+  grayBackground2.cssText = `display: none;`;
 }
 
 window.addEventListener("load", () => {

@@ -7,7 +7,6 @@ function offset(el) {
     top: rect.top + scrollTop,
     bottom: rect.top + scrollTop + rect.height,
     left: rect.left + scrollLeft,
-    right: rect.left + scrollLeft + rect.width,
     height: rect.height,
     width: rect.width,
   };
@@ -82,14 +81,15 @@ const blueEllipsePosPhone = () => {
 };
 
 const blueLadderLinePosPhone = () => {
+  console.log(121367)
   const blueLadderLine = document.querySelector("#blue-ladder-line");
   const blueLadderLinePosition = offset(
     document.querySelector("#tuyere-inner")
   );
   let blueLadderLineTop =
     blueLadderLinePosition.top - 0.5 * blueLadderLinePosition.height;
-  let blueLadderLineLeft = blueLadderLinePosition.left;
-  blueLadderLine.style.cssText = `position: absolute; top: ${blueLadderLineTop}px; left: ${blueLadderLineLeft}px;`;
+  let blueLadderLineRight = blueLadderLinePosition.left ;
+  blueLadderLine.style.cssText = `position: absolute; top: ${blueLadderLineTop}px; right: ${blueLadderLineRight}px;`;
 };
 
 const grayEllipsePosPhone = () => {

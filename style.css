@@ -462,6 +462,7 @@ nav {
 .equipment {
   display: flex;
   flex-direction: column;
+  width: 45%;
 }
 
 .equipment h3 {
@@ -469,7 +470,7 @@ nav {
 }
 
 .equipment p {
-  color: #000;
+  color: #ffffff;
 }
 
 .equipment-name {

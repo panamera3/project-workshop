@@ -40,8 +40,22 @@
     display: inline;
   }
 
+  #gray-background2 {
+    display: none;
+  }
+
   .application-button > a {
     margin: 0px 1em 0px 1em;
+  }
+
+  #characteristics-inner li {
+    margin-bottom: 0;
+  }
+
+  #characteristics-inner li p {
+    margin-bottom: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
   }
 
   .price-elements {
@@ -83,6 +97,10 @@
 
   #equipment-inners p {
     font-size: 17px;
+  }
+
+  #gray-background {
+    width: 80%;
   }
 
   .example-of-work-image {
@@ -140,7 +158,7 @@
     width: 20%;
   }
 
-  #gray-background2{
+  #gray-background2 {
     display: none;
   }
 
@@ -207,6 +225,10 @@
 
   #equipment-inners p {
     font-size: 15px;
+  }
+
+  .equipment-characteristics {
+    height: 2em;
   }
 
   .reason {
