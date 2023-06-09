@@ -29,12 +29,12 @@ const imgFeaturesBlueEllipsePosPhone = () => {
 const grayBackground2Pos = () => {
   const grayBackground = document.querySelector("#gray-background2");
   const positionGrayBackground = offset(
-    document.querySelector(".full-equipment")
+    document.querySelector(".equipment")
   );
   let grayBackgroundTop =
     positionGrayBackground.top -
     (grayBackground.height - positionGrayBackground.height) / 2;
-  grayBackground.style.cssText = `display: block; position: absolute; top: ${grayBackgroundTop}px; right: 0; width: ${60}%;`;
+  grayBackground.style.cssText = `width: 100%; display: block; position: absolute; top: ${grayBackgroundTop}px; right: 0;`;
 };
 
 const whiteDecor1PosPhone = () => {
@@ -83,7 +83,9 @@ const blueEllipsePosPhone = () => {
 
 const blueLadderLinePosPhone = () => {
   const blueLadderLine = document.querySelector("#blue-ladder-line");
-  const blueLadderLinePosition = offset(document.querySelector("#tuyere-inner"));
+  const blueLadderLinePosition = offset(
+    document.querySelector("#tuyere-inner")
+  );
   let blueLadderLineTop =
     blueLadderLinePosition.top - 0.5 * blueLadderLinePosition.height;
   let blueLadderLineLeft = blueLadderLinePosition.left;
