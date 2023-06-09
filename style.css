@@ -150,6 +150,14 @@ nav {
   width: 40%;
 }
 
+#img-white-background{
+  display: block;
+}
+
+#img-white-background2{
+  display: none;
+}
+
 #img-blue-ellipse {
   position: absolute;
   top: 2%;

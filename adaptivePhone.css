@@ -11,6 +11,14 @@
   h2 {
     font-size: 22px;
   }
+  
+  #img-white-background{
+    display: none;
+  }
+
+  #img-white-background2{
+    display: block;
+  }
 
   #gray-background {
     display: none;
@@ -50,6 +58,15 @@
     display: block;
   }
 
+  #logo {
+    display: inline;
+    width: 20%;
+  }
+
+  #logo2 {
+    display: none;
+  }
+
   .main-article {
     margin-bottom: 70px;
   }
@@ -60,7 +77,6 @@
   }
 
   .navigation {
-    margin-bottom: 50px;
     justify-content: space-between;
   }
 
