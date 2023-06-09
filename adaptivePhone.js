@@ -38,6 +38,15 @@ const grayBackground2Pos = () => {
   }
 };
 
+const grayBackground3Pos = () => {
+  const grayBackground = document.querySelector("#gray-background3");
+  const positionGrayBackground = offset(document.querySelector(".equipment"));
+  let grayBackgroundTop =
+    positionGrayBackground.top -
+    (grayBackground.height - positionGrayBackground.height) / 2;
+  grayBackground.style.cssText = `width: 120%; display: block; position: absolute; top: ${grayBackgroundTop}px; left: -10%`;
+};
+
 const whiteDecor1PosPhone = () => {
   const whiteDecor1 = document.querySelector("#white-decor1-phone");
   const whiteDecor1Position = offset(
@@ -135,7 +144,6 @@ const decorLinesPosPhone = () => {
 function imgPositionsPhones() {
   imgBlueEllipsePosPhone();
   imgFeaturesBlueEllipsePosPhone();
-  grayBackground2Pos();
   whiteDecor1PosPhone();
   whiteDecor2PosPhone();
   greyWavyLinesPosPhone();
@@ -154,7 +162,15 @@ window.addEventListener("load", () => {
 });
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth < 770) {
+  if (window.innerWidth < 770 && window.innerWidth >= 500) {
+    const grayBackground = document.querySelector("#gray-background2");
+    grayBackground.style.cssText = `display: none`;
+    grayBackground3Pos();
+    imgPositionsPhones();
+  } else if (window.innerWidth < 500) {
+    const grayBackground = document.querySelector("#gray-background3");
+    grayBackground.style.cssText = `display: none`;
+    grayBackground2Pos();
     imgPositionsPhones();
   }
 });

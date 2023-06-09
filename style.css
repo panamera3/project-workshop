@@ -71,6 +71,10 @@ img {
   display: none;
 }
 
+#gray-background3 {
+  display: none;
+}
+
 .title-container {
   margin-bottom: 100px;
 }
