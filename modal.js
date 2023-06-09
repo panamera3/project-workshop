@@ -1,6 +1,6 @@
 var modal = document.querySelector("#myModal");
 var btn = document.querySelector("#menuBtn");
-// Когда пользователь нажимает на кнопку, откройте модальный
+// Когда пользователь нажимает на кнопку, открывается модальное окно
 btn.onclick = () => {
   modal.style.display = "block";
   document.body.style.overflow = "hidden";
@@ -8,7 +8,7 @@ btn.onclick = () => {
 };
 
 var closeImg = document.querySelector("#close");
-// Когда пользователь нажимает на X, закройте модальное окно
+// Когда пользователь нажимает на X, закрывается модальное окно
 closeImg.onclick = () => {
   modal.style.display = "none";
   document.body.style.overflow = "";
@@ -27,7 +27,7 @@ titleButton.forEach((button) => {
   });
 });
 
-// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+// Когда пользователь щелкает в любом месте за пределами модального, закрывается модальное окно
 window.onclick = (event) => {
   if (event.target == modal) {
     modal.style.display = "none";
