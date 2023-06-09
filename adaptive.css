@@ -214,6 +214,24 @@
     width: 50%;
   }
 
+  .price-elements-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .price-elements {
+    width: 70%;
+  }
+
+  .price-element {
+    width: 10em;
+    height: 10em;
+  }
+
+  .price-element p {
+    font-size: 1.5em;
+  }
+
   #plazm {
     width: 15em;
     height: 15em;
