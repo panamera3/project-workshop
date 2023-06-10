@@ -30,7 +30,7 @@ const grayBackground2Pos = () => {
   let grayBackgroundTop =
     positionGrayBackground.top -
     (grayBackground.height - positionGrayBackground.height) / 2;
-  grayBackground.style.cssText = `width: 100%; display: block; position: absolute; top: ${grayBackgroundTop}px; right: 0;`;
+  grayBackground.style.cssText = `width: 110%; display: block; position: absolute; top: ${grayBackgroundTop}px; right: 0;`;
   if (grayBackground.height < positionGrayBackground.height * 1.5) {
     grayBackground.style.cssText = `height: ${
       positionGrayBackground.height * 1.5

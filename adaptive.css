@@ -111,6 +111,10 @@
     flex-direction: column;
   }
 
+  #second-feature {
+    border-bottom: 0px solid #000;
+  }
+
   .several-features:first-child {
     margin-right: 0;
   }
@@ -153,7 +157,7 @@
   .modal {
     display: none;
   }
-  
+
   #white-decor1 {
     display: none;
   }
@@ -214,7 +218,7 @@
     width: 50%;
   }
 
-  .price-elements-container{
+  .price-elements-container {
     display: flex;
     justify-content: center;
   }

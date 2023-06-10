@@ -297,6 +297,10 @@ nav {
   justify-content: end;
 }
 
+.feature:first-of-type {
+  border-top: 1px solid #181818;
+}
+
 .feature > img {
   width: 20%;
   padding-right: 50px;
@@ -310,10 +314,6 @@ nav {
 
 .feature-name > h3 {
   font-size: 25px;
-}
-
-.feature:first-of-type {
-  border-top: 1px solid #181818;
 }
 
 .hidden {
