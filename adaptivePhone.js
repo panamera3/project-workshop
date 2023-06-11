@@ -30,7 +30,7 @@ const grayBackground2Pos = () => {
   let grayBackgroundTop =
     positionGrayBackground.top -
     (grayBackground.height - positionGrayBackground.height) / 2;
-  grayBackground.style.cssText = `width: 110%; display: block; position: absolute; top: ${grayBackgroundTop}px; right: 0;`;
+  grayBackground.style.cssText = `display: block; position: absolute; top: ${grayBackgroundTop}px; right: 0;`;
   if (grayBackground.height < positionGrayBackground.height * 1.5) {
     grayBackground.style.cssText = `height: ${
       positionGrayBackground.height * 1.5
@@ -161,10 +161,10 @@ function imgPositionsPhones() {
 }
 
 window.addEventListener("load", () => {
-  if (window.innerWidth < 770) {
+  if (window.innerWidth < 770 && window.innerWidth >= 500) {
     imgPositionsPhones();
-    window.dispatchEvent(new Event("resize"));
   }
+  window.dispatchEvent(new Event("resize"));
 });
 
 window.addEventListener("resize", () => {
@@ -174,8 +174,8 @@ window.addEventListener("resize", () => {
     grayBackground3Pos();
     imgPositionsPhones();
   } else if (window.innerWidth < 500) {
-    const grayBackground = document.querySelector("#gray-background3");
-    grayBackground.style.cssText = `display: none`;
+    const grayBackground3 = document.querySelector("#gray-background3");
+    grayBackground3.style.cssText = `display: none`;
     grayBackground2Pos();
     imgPositionsPhones();
   }

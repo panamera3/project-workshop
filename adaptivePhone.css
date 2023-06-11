@@ -223,7 +223,7 @@
 
   .equipment-characteristics div {
     margin-top: 3%;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
   }
 
   .features > ul {
@@ -343,8 +343,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  /* менять gray background 2, когда ширина меньше 500 норм, когда между 500 и 770 слишком высокая */
-
   .reason-phones {
     height: 25em;
   }
@@ -359,5 +357,9 @@
 
   #tuyere-inner {
     margin-top: 4em;
+  }
+
+  #gray-background2 {
+    width: 110%;
   }
 }
