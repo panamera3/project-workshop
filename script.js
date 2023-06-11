@@ -3,9 +3,21 @@ document.addEventListener("click", function (event) {
   const featureDescription = event.target.parentNode.querySelector(
     ".feature-description"
   );
+  const plus = event.target.parentNode.querySelector(".plus");
+  const minus = event.target.parentNode.querySelector(".minus");
+  plus.classList.toggle("hidden");
+  minus.classList.toggle("hidden");
   if (!featureDescription) return;
   featureDescription.classList.toggle("hidden");
   window.dispatchEvent(new Event("resize"));
+});
+
+document.addEventListener("click", function (event) {
+  if (!event.target.classList.contains("minus")) return;
+  const plus = event.target.parentNode.querySelector(".plus");
+  const minus = event.target.parentNode.querySelector(".minus");
+  plus.classList.toggle("hidden");
+  minus.classList.toggle("hidden");
 });
 
 document.addEventListener("click", (event) => {
@@ -38,4 +50,3 @@ charDiv.addEventListener("click", () => {
   descParagInner.style.display = "none";
   window.dispatchEvent(new Event("resize"));
 });
-
