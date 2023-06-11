@@ -263,7 +263,8 @@ nav {
   justify-content: space-around;
 }
 
-.plus, .minus {
+.plus,
+.minus {
   margin-right: 1em;
   margin-left: auto;
   font-size: 25px;
@@ -555,7 +556,6 @@ nav {
 .reason {
   display: none;
   width: 80%;
-  height: 25em;
 }
 
 .reason-inner {
@@ -580,7 +580,7 @@ nav {
 .arrows {
   display: flex;
   justify-content: center;
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 .arrows-phones {
