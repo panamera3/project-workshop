@@ -38,15 +38,13 @@ var charParagInner = document.getElementById("characteristics-inner");
 descDiv.addEventListener("click", () => {
   descDiv.classList.toggle("active");
   charDiv.classList.toggle("active");
-  descParagInner.style.display = "inline";
+  descParagInner.style.display = "block";
   charParagInner.style.display = "none";
-  window.dispatchEvent(new Event("resize"));
 });
 
 charDiv.addEventListener("click", () => {
   charDiv.classList.toggle("active");
   descDiv.classList.toggle("active");
-  charParagInner.style.display = "inline";
+  charParagInner.style.display = "block";
   descParagInner.style.display = "none";
-  window.dispatchEvent(new Event("resize"));
 });

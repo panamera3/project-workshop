@@ -247,6 +247,7 @@
 
   #equipment-inners p {
     font-size: 15px;
+    line-height: normal;
   }
 
   .reason {
