@@ -21,6 +21,11 @@
   z-index: 1;
 }
 
+#modal-application-btn{
+  z-index: 1;
+  position: relative;
+}
+
 .modal-content ul {
   padding-top: 8em;
   align-items: start;
