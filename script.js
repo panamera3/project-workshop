@@ -27,6 +27,10 @@ document.addEventListener("click", (event) => {
     ".feature-description"
   );
   featureDesc.classList.toggle("hidden");
+  const plus = event.target.parentNode.querySelector(".plus");
+  const minus = event.target.parentNode.querySelector(".minus");
+  plus.classList.toggle("hidden");
+  minus.classList.toggle("hidden");
   window.dispatchEvent(new Event("resize"));
 });
 

@@ -37,16 +37,13 @@
   font-size: 30px;
 }
 
-/*
 #modal-close {
   width: 100%;
   display: flex;
   justify-content: end;
 }
-*/
 
 #close {
-  float: right;
   padding-top: 1em;
   padding-right: 1em;
   width: 3rem;
@@ -81,6 +78,6 @@
 
 @media screen and (max-width: 400px) {
   .modal-content ul {
-    padding-top: 4em;
+    padding-top: 0;
   }
 }
