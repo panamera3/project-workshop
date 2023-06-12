@@ -12,6 +12,7 @@ const shownextItemPhones = () => {
     countPhones = 0;
   }
   itemsPhones[countPhones].classList.add("active-reason-phone");
+  window.dispatchEvent(new Event("resize"));
 };
 
 const showpreviousItemPhones = () => {
@@ -22,6 +23,7 @@ const showpreviousItemPhones = () => {
     countPhones = itemPhonesCount - 1;
   }
   itemsPhones[countPhones].classList.add("active-reason-phone");
+  window.dispatchEvent(new Event("resize"));
 };
 
 const keyPressPhone = (e) => {

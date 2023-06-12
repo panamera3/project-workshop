@@ -275,7 +275,6 @@
   .reason-phones {
     display: none;
     width: 100%;
-    height: 15em;
   }
 
   .reason-inner h3 {
@@ -296,6 +295,7 @@
   .arrows-phones {
     display: flex;
     justify-content: center;
+    margin-top: 2em;
   }
 
   .arrows {
@@ -343,10 +343,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  .reason-phones {
-    height: 25em;
-  }
-
   .example-of-work-number {
     font-size: 30px;
   }
