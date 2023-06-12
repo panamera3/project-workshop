@@ -36,17 +36,21 @@
 .modal-content ul li a {
   font-size: 30px;
 }
-
+/*
 #modal-close {
   width: 100%;
   display: flex;
   justify-content: end;
 }
+*/
 
 #close {
+  display: block;
   padding-top: 1em;
   padding-right: 1em;
   width: 3rem;
+  float: right;
+  z-index: 1;
 }
 
 #close:hover,
@@ -75,9 +79,10 @@
     padding-top: 4em;
   }
 }
-
+/*
 @media screen and (max-width: 400px) {
   .modal-content ul {
     padding-top: 0;
   }
 }
+*/
