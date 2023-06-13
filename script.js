@@ -1,25 +1,3 @@
-document.addEventListener("click", function (event) {
-  if (!event.target.classList.contains("plus")) return;
-  const featureDescription = event.target.parentNode.querySelector(
-    ".feature-description"
-  );
-  const plus = event.target.parentNode.querySelector(".plus");
-  const minus = event.target.parentNode.querySelector(".minus");
-  plus.classList.toggle("hidden");
-  minus.classList.toggle("hidden");
-  if (!featureDescription) return;
-  featureDescription.classList.toggle("hidden");
-  window.dispatchEvent(new Event("resize"));
-});
-
-document.addEventListener("click", function (event) {
-  if (!event.target.classList.contains("minus")) return;
-  const plus = event.target.parentNode.querySelector(".plus");
-  const minus = event.target.parentNode.querySelector(".minus");
-  plus.classList.toggle("hidden");
-  minus.classList.toggle("hidden");
-});
-
 document.addEventListener("click", (event) => {
   if (!event.target.closest(".feature-name")) return;
   const featureName = event.target.closest(".feature-name");
@@ -27,10 +5,8 @@ document.addEventListener("click", (event) => {
     ".feature-description"
   );
   featureDesc.classList.toggle("hidden");
-  const plus = event.target.parentNode.querySelector(".plus");
-  const minus = event.target.parentNode.querySelector(".minus");
-  plus.classList.toggle("hidden");
-  minus.classList.toggle("hidden");
+  featureName.querySelector(".plus").classList.toggle("hidden");
+  featureName.querySelector(".minus").classList.toggle("hidden");
   window.dispatchEvent(new Event("resize"));
 });
 
